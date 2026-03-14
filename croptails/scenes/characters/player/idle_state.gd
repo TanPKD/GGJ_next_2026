@@ -9,7 +9,6 @@ func _on_process(_delta : float) -> void:
 
 
 func _on_physics_process(_delta : float) -> void:
-	print(animated_sprite_2d)
 	if player.player_direction == Vector2.UP:
 		animated_sprite_2d.play("idle_back")
 	elif player.player_direction == Vector2.RIGHT:
@@ -20,6 +19,13 @@ func _on_physics_process(_delta : float) -> void:
 		animated_sprite_2d.play("idle_left")
 	else:
 		animated_sprite_2d.play("idle_front")
+	
+	if player.current_tool==DataTypes.Tools.AxeWood and GameInputEvents.use_tool():
+		transition.emit("Chopping")
+	if player.current_tool==DataTypes.Tools.TillGround and GameInputEvents.use_tool():
+		transition.emit("Tilling")
+	
+	
 
 
 func _on_next_transitions() -> void:
