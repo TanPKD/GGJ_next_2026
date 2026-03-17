@@ -25,6 +25,15 @@ window/stretch/mode="viewport"
 window/stretch/aspect="keep_height"
 window/stretch/scale_mode="integer"
 
+[file_customization]
+
+folder_colors={
+"res://assets/": "orange",
+"res://scenes/": "green",
+"res://scripts/": "pink",
+"res://tilesets/": "yellow"
+}
+
 [input]
 
 walk_up={

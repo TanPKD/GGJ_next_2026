@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://dbbthp3ec1lx2"]
+
+[node name="LargeHouse" type="Node2D" unique_id=1048029880]
+
+[node name="HouseTilemap" type="Node2D" parent="." unique_id=931913736]
+
+[node name="Floor" type="TileMapLayer" parent="HouseTilemap" unique_id=608762572]

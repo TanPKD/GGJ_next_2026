@@ -24,7 +24,8 @@ func _on_physics_process(_delta : float) -> void:
 		transition.emit("Chopping")
 	if player.current_tool==DataTypes.Tools.TillGround and GameInputEvents.use_tool():
 		transition.emit("Tilling")
-	
+	if player.current_tool==DataTypes.Tools.WaterCrops and GameInputEvents.use_tool():
+		transition.emit("Watering")
 	
 
 
