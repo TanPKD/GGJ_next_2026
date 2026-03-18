@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="Croptails"
+run/main_scene="uid://c61k5w3shqaj2"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+SceneManager="uid://bikuq3oe11fwe"
 
 [display]
 
