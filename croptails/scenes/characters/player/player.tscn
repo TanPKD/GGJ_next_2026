@@ -393,9 +393,9 @@ animations = [{
 "speed": 3.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_t61fv"]
-radius = 6.0
-height = 16.0
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_42irl"]
+radius = 3.181818
+height = 9.090909
 
 [node name="Player" type="CharacterBody2D" unique_id=314041540]
 script = ExtResource("1_6avc5")
@@ -403,11 +403,13 @@ script = ExtResource("1_6avc5")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1555785424]
 position = Vector2(0, -8)
 sprite_frames = SubResource("SpriteFrames_omk8d")
-animation = &"chopping_front"
+animation = &"idle_front"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2033981789]
-position = Vector2(0, -8)
-shape = SubResource("CapsuleShape2D_t61fv")
+position = Vector2(2.3841858e-07, -3.5)
+rotation = 1.5707964
+scale = Vector2(1.1, 1.1)
+shape = SubResource("CapsuleShape2D_42irl")
 
 [node name="StateMachine" type="Node" parent="." unique_id=295025742 node_paths=PackedStringArray("initial_node_state")]
 script = ExtResource("3_hss88")
