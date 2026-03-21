@@ -25,15 +25,19 @@ func _on_next_transitions() -> void:
 func _on_enter() -> void:
 	if player.player_direction==Vector2.UP:
 		animated_sprite_2d.play("chopping_back")
+		await get_tree().create_timer(0.4).timeout
 		hit_component_collision_shape.position=Vector2(0,-18)
 	elif player.player_direction == Vector2.RIGHT:
 		animated_sprite_2d.play("chopping_right")
+		await get_tree().create_timer(0.4).timeout
 		hit_component_collision_shape.position=Vector2(9,0)
 	elif player.player_direction == Vector2.DOWN:
 		animated_sprite_2d.play("chopping_front")
+		await get_tree().create_timer(0.4).timeout
 		hit_component_collision_shape.position=Vector2(0,3)
 	elif player.player_direction == Vector2.LEFT:
 		animated_sprite_2d.play("chopping_left")
+		await get_tree().create_timer(0.4).timeout
 		hit_component_collision_shape.position=Vector2(-9,0)
 	else:
 		animated_sprite_2d.play("chopping_front")
