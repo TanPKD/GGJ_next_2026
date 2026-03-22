@@ -25,13 +25,20 @@ const SCENE_PATH_DICT: Dictionary = {
 	scene.test_scene_player: "res://scenes/test/test_scene_player.tscn",
 	scene.test_scene_tilemap: "res://scenes/test/test_scene_tilemap.tscn"
 }
+<<<<<<< Updated upstream
 
+=======
+# 这些是以后要用的关卡循环代码，还没法验证能不能用
+
+# 🔥 循环流程（不包含 main_menu）
+>>>>>>> Stashed changes
 const SCENE_FLOW: Array[scene] = [
 	scene.test_scene_default,
 	scene.test_scene_house_tilemap,
 	scene.test_scene_player,
 	scene.test_scene_tilemap
 ]
+<<<<<<< Updated upstream
 '''
 static func get_next_scene(current: scene) -> scene:
 	var index := SCENE_FLOW.find(current)
@@ -44,3 +51,19 @@ static func get_next_scene(current: scene) -> scene:
 	
 	return SCENE_FLOW[index]
 '''
+=======
+
+# 🔁 获取下一个场景（循环）
+static func get_next_scene(current: scene) -> scene:
+	var index = SCENE_FLOW.find(current)
+	
+	if index == -1:
+		return SCENE_FLOW[0]  # 异常保护
+	
+	index += 1
+	
+	if index >= SCENE_FLOW.size():
+		index = 0  # 循环回去
+	
+	return SCENE_FLOW[index]
+>>>>>>> Stashed changes

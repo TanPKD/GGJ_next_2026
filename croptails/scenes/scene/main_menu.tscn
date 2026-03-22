@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 [gd_scene format=3 uid="uid://dlmslshwvjsgx"]
 
 [ext_resource type="Texture2D" uid="uid://coyuemob2vg4n" path="res://梗图.png" id="2_gi87k"]
@@ -39,6 +40,12 @@ func _on_credit_back_pressed() -> void:
 func _on_exit_pressed() -> void:
 	get_tree().quit()
 "
+=======
+[gd_scene format=3 uid="uid://dgpqfhkatrnea"]
+
+[ext_resource type="Texture2D" uid="uid://pdlkwto8iyxu" path="res://梗图.png" id="2_gi87k"]
+[ext_resource type="Script" uid="uid://cuvuoknf1776f" path="res://scenes/scene/main_menu.gd" id="3_gi87k"]
+>>>>>>> Stashed changes
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rcfat"]
 texture = ExtResource("2_gi87k")
@@ -109,7 +116,11 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+<<<<<<< Updated upstream
 script = SubResource("GDScript_6esvd")
+=======
+script = ExtResource("3_gi87k")
+>>>>>>> Stashed changes
 
 [node name="Label" type="Label" parent="." unique_id=1435287362]
 layout_mode = 1
@@ -124,7 +135,10 @@ offset_right = 160.0
 offset_bottom = -49.0
 grow_horizontal = 2
 grow_vertical = 2
+<<<<<<< Updated upstream
 mouse_filter = 1
+=======
+>>>>>>> Stashed changes
 theme_override_colors/font_shadow_color = Color(0.39215687, 0.39215687, 0.39215687, 1)
 theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_offset_y = 7
@@ -141,7 +155,11 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+<<<<<<< Updated upstream
 mouse_filter = 2
+=======
+mouse_filter = 1
+>>>>>>> Stashed changes
 theme_override_styles/panel = SubResource("StyleBoxTexture_rcfat")
 
 [node name="main_main_menu" type="VBoxContainer" parent="." unique_id=779835575]
@@ -222,7 +240,10 @@ action_mode = 0
 text = "exit"
 
 [node name="credit_menu" type="VBoxContainer" parent="." unique_id=1910946335]
+<<<<<<< Updated upstream
 visible = false
+=======
+>>>>>>> Stashed changes
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
