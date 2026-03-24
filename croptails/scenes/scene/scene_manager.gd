@@ -2,26 +2,31 @@ extends CanvasLayer
 
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 
-var last_scene: DataTypes.scene = DataTypes.scene.test_scene_default
 var is_changing: bool = false
 
-func change_scene(target_scene: DataTypes.scene) -> void:
+func change_scene(target_scene: String) -> void:
 	if is_changing:
 		return
 	is_changing = true
 
-	last_scene = target_scene
-
+	# 黑屏
 	animation_player.play("trans_out")
 	await animation_player.animation_finished
 
-	var scene_path: String = DataTypes.SCENE_PATH_DICT[target_scene]
-	var packed_scene: PackedScene = load(scene_path)
+	# 切场景
+	var packed_scene: PackedScene = load(target_scene)
+	if packed_scene == null:
+		push_error("加载失败: " + target_scene)
+		is_changing = false
+		return
+		
 	get_tree().change_scene_to_packed(packed_scene)
 
 	await get_tree().process_frame
 
+	# 淡入
 	animation_player.play("trans_in")
+
 	is_changing = false
 '''
 func next_scene() -> void:
