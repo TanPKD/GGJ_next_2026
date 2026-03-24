@@ -11,13 +11,14 @@ config_version=5
 [application]
 
 config/name="Croptails"
-run/main_scene="uid://c61k5w3shqaj2"
+run/main_scene="uid://dgpqfhkatrnea"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
 
-SceneManager="uid://bikuq3oe11fwe"
+Scene_Manager="*uid://bikuq3oe11fwe"
+CharactersChosen="*uid://1py5lxfcqujp"
 
 [display]
 
@@ -33,6 +34,7 @@ window/stretch/scale_mode="integer"
 
 folder_colors={
 "res://assets/": "orange",
+"res://pictures/": "blue",
 "res://scenes/": "green",
 "res://scripts/": "pink",
 "res://tilesets/": "yellow"

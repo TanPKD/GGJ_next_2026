@@ -1,0 +1,235 @@
+[gd_scene format=3 uid="uid://dlmslshwvjsgx"]
+
+[ext_resource type="Script" uid="uid://bptk4edabx633" path="res://scenes/scene/main_menu.gd" id="1_x647b"]
+[ext_resource type="Texture2D" uid="uid://coyuemob2vg4n" path="res://pictures/梗图.png" id="2_gi87k"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rcfat"]
+texture = ExtResource("2_gi87k")
+modulate_color = Color(0.39215687, 0.39215687, 0.39215687, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_itlps"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_size = 3
+shadow_offset = Vector2(0, 2.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rcfat"]
+bg_color = Color(0.5882353, 0.5882353, 0.5882353, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_size = 3
+shadow_offset = Vector2(0, 2.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_umnae"]
+bg_color = Color(0.78431374, 0.78431374, 0.78431374, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_size = 3
+shadow_offset = Vector2(0, 2.5)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_y5crb"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x647b"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_size = 3
+shadow_offset = Vector2(0, 2.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gi87k"]
+bg_color = Color(0.5882353, 0.5882353, 0.5882353, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_size = 3
+shadow_offset = Vector2(0, 2.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_naftw"]
+bg_color = Color(0.78431374, 0.78431374, 0.78431374, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_size = 3
+shadow_offset = Vector2(0, 2.5)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_itlps"]
+
+[node name="MainMenu" type="Control" unique_id=504949328]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_x647b")
+
+[node name="Panel" type="Panel" parent="." unique_id=430218645]
+z_index = -10
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_rcfat")
+
+[node name="Label" type="Label" parent="." unique_id=1435287362]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -160.0
+offset_top = -140.0
+offset_right = 160.0
+offset_bottom = -49.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme_override_colors/font_shadow_color = Color(0.39215687, 0.39215687, 0.39215687, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 7
+theme_override_font_sizes/font_size = 64
+text = "请输入文本"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="main_main_menu" type="VBoxContainer" parent="." unique_id=779835575]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -70.75
+offset_top = 8.0
+offset_right = 70.75
+offset_bottom = 131.25
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="Button1" type="Button" parent="main_main_menu" unique_id=1715300]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("StyleBoxFlat_itlps")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_rcfat")
+theme_override_styles/hover = SubResource("StyleBoxFlat_umnae")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_y5crb")
+action_mode = 0
+text = "start"
+
+[node name="Button2" type="Button" parent="main_main_menu" unique_id=1255037778]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("StyleBoxFlat_itlps")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_rcfat")
+theme_override_styles/hover = SubResource("StyleBoxFlat_umnae")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_y5crb")
+action_mode = 0
+text = "option"
+
+[node name="Button3" type="Button" parent="main_main_menu" unique_id=448055129]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("StyleBoxFlat_x647b")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_gi87k")
+theme_override_styles/hover = SubResource("StyleBoxFlat_naftw")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_itlps")
+action_mode = 0
+text = "credit"
+
+[node name="Button4" type="Button" parent="main_main_menu" unique_id=1031714556]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("StyleBoxFlat_x647b")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_gi87k")
+theme_override_styles/hover = SubResource("StyleBoxFlat_naftw")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_itlps")
+action_mode = 0
+text = "exit"
+
+[node name="credit_menu" type="VBoxContainer" parent="." unique_id=1910946335]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -125.0
+offset_top = -27.5
+offset_right = 125.0
+offset_bottom = 177.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 16
+
+[node name="Label" type="Label" parent="credit_menu" unique_id=2079458895]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+theme_override_colors/font_shadow_color = Color(0.39215687, 0.39215687, 0.39215687, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 5
+theme_override_font_sizes/font_size = 36
+text = "点击输入文字"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Button5" type="Button" parent="credit_menu" unique_id=59211096]
+custom_minimum_size = Vector2(125, 30)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("StyleBoxFlat_itlps")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_rcfat")
+theme_override_styles/hover = SubResource("StyleBoxFlat_umnae")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_y5crb")
+action_mode = 0
+text = "back"
+
+[connection signal="pressed" from="main_main_menu/Button1" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="main_main_menu/Button2" to="." method="_on_setting_pressed"]
+[connection signal="pressed" from="main_main_menu/Button3" to="." method="_on_credit_pressed"]
+[connection signal="pressed" from="main_main_menu/Button4" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="credit_menu/Button5" to="." method="_on_credit_back_pressed"]

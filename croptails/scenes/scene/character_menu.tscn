@@ -1,0 +1,316 @@
+[gd_scene format=3 uid="uid://6qoba0efgapq"]
+
+[ext_resource type="Script" uid="uid://ce03qde1bsysp" path="res://scenes/scene/character_menu.gd" id="1_4bh4p"]
+[ext_resource type="Texture2D" uid="uid://dy0six60qg6c5" path="res://pictures/梗图2.jpg" id="1_ijmyt"]
+[ext_resource type="Texture2D" uid="uid://do21yrw3sbtpt" path="res://pictures/梗图3.jpg" id="2_ijqeb"]
+[ext_resource type="Texture2D" uid="uid://blwgba5wfvnbj" path="res://pictures/hunter.png" id="2_op6yf"]
+[ext_resource type="Texture2D" uid="uid://cdqb8svv8dp2d" path="res://pictures/hunter3.png" id="3_bj53o"]
+[ext_resource type="Texture2D" uid="uid://cadruyjynesmk" path="res://pictures/梗图4.jpg" id="3_op6yf"]
+[ext_resource type="Texture2D" uid="uid://belg6hmoel5ul" path="res://pictures/hunter2.png" id="4_58bhn"]
+[ext_resource type="Texture2D" uid="uid://c4oh27ffqj31d" path="res://pictures/farmer.png" id="5_56enj"]
+[ext_resource type="Texture2D" uid="uid://c64tajoyjj2m0" path="res://pictures/farmer3.png" id="6_4bh4p"]
+[ext_resource type="Texture2D" uid="uid://dhkllxhco6mwv" path="res://pictures/farmer2.png" id="7_qy06r"]
+[ext_resource type="Texture2D" uid="uid://dec54v2yhe0sr" path="res://pictures/builder.png" id="8_8hev4"]
+[ext_resource type="Texture2D" uid="uid://b8pidjo3dn1ot" path="res://pictures/builder3.png" id="9_qdcr5"]
+[ext_resource type="Texture2D" uid="uid://dckr55fojtoil" path="res://pictures/builder2.png" id="10_vi6ec"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bj53o"]
+bg_color = Color(0.39215687, 0.39215687, 0.39215687, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_56enj"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_size = 3
+shadow_offset = Vector2(0, 2.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4bh4p"]
+bg_color = Color(0.5882353, 0.5882353, 0.5882353, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_size = 3
+shadow_offset = Vector2(0, 2.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qy06r"]
+bg_color = Color(0.78431374, 0.78431374, 0.78431374, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_size = 3
+shadow_offset = Vector2(0, 2.5)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8hev4"]
+
+[node name="CharacterMenu" type="Control" unique_id=1503331984]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4bh4p")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=840533747]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -240.25
+offset_top = -124.0
+offset_right = 240.25
+offset_bottom = 75.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 15
+
+[node name="Panel" type="Panel" parent="HBoxContainer" unique_id=1876011488]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/Panel" unique_id=222951727]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_ijmyt")
+expand_mode = 1
+
+[node name="Panel" type="Panel" parent="HBoxContainer/Panel" unique_id=1113197071]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -61.125
+offset_top = -22.0
+offset_right = 61.125
+offset_bottom = 15.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_bj53o")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/Panel/Panel" unique_id=1871107225]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -52.0
+offset_top = -16.0
+offset_right = 52.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="hunter1" type="TextureButton" parent="HBoxContainer/Panel/Panel/HBoxContainer" unique_id=764376951]
+layout_mode = 2
+texture_normal = ExtResource("2_op6yf")
+texture_pressed = ExtResource("3_bj53o")
+texture_hover = ExtResource("4_58bhn")
+texture_disabled = ExtResource("3_bj53o")
+
+[node name="farmer1" type="TextureButton" parent="HBoxContainer/Panel/Panel/HBoxContainer" unique_id=1501200016]
+layout_mode = 2
+texture_normal = ExtResource("5_56enj")
+texture_pressed = ExtResource("6_4bh4p")
+texture_hover = ExtResource("7_qy06r")
+texture_disabled = ExtResource("6_4bh4p")
+
+[node name="builder1" type="TextureButton" parent="HBoxContainer/Panel/Panel/HBoxContainer" unique_id=1526045594]
+layout_mode = 2
+texture_normal = ExtResource("8_8hev4")
+texture_pressed = ExtResource("9_qdcr5")
+texture_hover = ExtResource("10_vi6ec")
+texture_disabled = ExtResource("9_qdcr5")
+
+[node name="Panel2" type="Panel" parent="HBoxContainer" unique_id=1545928528]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/Panel2" unique_id=2036590651]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_ijqeb")
+expand_mode = 1
+
+[node name="Panel" type="Panel" parent="HBoxContainer/Panel2" unique_id=232781367]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -61.125
+offset_top = -22.0
+offset_right = 61.125
+offset_bottom = 15.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_bj53o")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/Panel2/Panel" unique_id=1281730169]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -52.0
+offset_top = -16.0
+offset_right = 52.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="hunter2" type="TextureButton" parent="HBoxContainer/Panel2/Panel/HBoxContainer" unique_id=1925967240]
+layout_mode = 2
+texture_normal = ExtResource("2_op6yf")
+texture_pressed = ExtResource("3_bj53o")
+texture_hover = ExtResource("4_58bhn")
+texture_disabled = ExtResource("3_bj53o")
+
+[node name="farmer2" type="TextureButton" parent="HBoxContainer/Panel2/Panel/HBoxContainer" unique_id=67287498]
+layout_mode = 2
+texture_normal = ExtResource("5_56enj")
+texture_pressed = ExtResource("6_4bh4p")
+texture_hover = ExtResource("7_qy06r")
+texture_disabled = ExtResource("6_4bh4p")
+
+[node name="builder2" type="TextureButton" parent="HBoxContainer/Panel2/Panel/HBoxContainer" unique_id=253736397]
+layout_mode = 2
+texture_normal = ExtResource("8_8hev4")
+texture_pressed = ExtResource("9_qdcr5")
+texture_hover = ExtResource("10_vi6ec")
+texture_disabled = ExtResource("9_qdcr5")
+
+[node name="Panel3" type="Panel" parent="HBoxContainer" unique_id=2064560448]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/Panel3" unique_id=1919355135]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_op6yf")
+expand_mode = 1
+
+[node name="Panel" type="Panel" parent="HBoxContainer/Panel3" unique_id=1518048210]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -61.125
+offset_top = -21.0
+offset_right = 61.125
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_bj53o")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/Panel3/Panel" unique_id=70445582]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -52.0
+offset_top = -16.0
+offset_right = 52.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="hunter3" type="TextureButton" parent="HBoxContainer/Panel3/Panel/HBoxContainer" unique_id=1373162984]
+layout_mode = 2
+texture_normal = ExtResource("2_op6yf")
+texture_pressed = ExtResource("3_bj53o")
+texture_hover = ExtResource("4_58bhn")
+texture_disabled = ExtResource("3_bj53o")
+
+[node name="farmer3" type="TextureButton" parent="HBoxContainer/Panel3/Panel/HBoxContainer" unique_id=591412072]
+layout_mode = 2
+texture_normal = ExtResource("5_56enj")
+texture_pressed = ExtResource("6_4bh4p")
+texture_hover = ExtResource("7_qy06r")
+texture_disabled = ExtResource("6_4bh4p")
+
+[node name="builder3" type="TextureButton" parent="HBoxContainer/Panel3/Panel/HBoxContainer" unique_id=1034914336]
+layout_mode = 2
+texture_normal = ExtResource("8_8hev4")
+texture_pressed = ExtResource("9_qdcr5")
+texture_hover = ExtResource("10_vi6ec")
+texture_disabled = ExtResource("9_qdcr5")
+
+[node name="Button" type="Button" parent="." unique_id=1017911467]
+custom_minimum_size = Vector2(125, 30)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -62.5
+offset_top = 112.0
+offset_right = 62.5
+offset_bottom = 142.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("StyleBoxFlat_56enj")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_4bh4p")
+theme_override_styles/hover = SubResource("StyleBoxFlat_qy06r")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8hev4")
+action_mode = 0
+text = "新的一天"
+
+[node name="Label" type="Label" parent="." unique_id=493628507]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -162.0
+offset_top = -165.0
+offset_right = 162.0
+offset_bottom = -113.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0.39215687, 0.39215687, 0.39215687, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 5
+theme_override_font_sizes/font_size = 36
+text = "选择今天的工作分配"
+
+[connection signal="pressed" from="Button" to="." method="_on_next_day_pressed"]
