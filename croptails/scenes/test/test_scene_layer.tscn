@@ -67,12 +67,3 @@ position = Vector2(294, 199)
 
 [node name="Player" parent="." unique_id=314041540 instance=ExtResource("2_yowpb")]
 position = Vector2(329, 234)
-
-[node name="Camera2D" type="Camera2D" parent="Player" unique_id=847550121]
-zoom = Vector2(2, 2)
-drag_horizontal_enabled = true
-drag_vertical_enabled = true
-drag_left_margin = 0.1
-drag_top_margin = 0.1
-drag_right_margin = 0.1
-drag_bottom_margin = 0.1

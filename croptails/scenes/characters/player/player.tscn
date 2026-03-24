@@ -10,6 +10,7 @@
 [ext_resource type="Script" uid="uid://bsoilleh2cgnc" path="res://scenes/characters/player/tilling_state.gd" id="8_xuses"]
 [ext_resource type="Script" uid="uid://t5ormpmrmxhm" path="res://scenes/characters/player/watering_state.gd" id="9_42irl"]
 [ext_resource type="PackedScene" uid="uid://colg44otebqsu" path="res://scenes/components/hit_component.tscn" id="10_3xnwo"]
+[ext_resource type="Script" uid="uid://bslfbrbqosvec" path="res://scenes/characters/player/camera2D.gd" id="11_djydg"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hss88"]
 atlas = ExtResource("1_t61fv")
@@ -456,3 +457,12 @@ animated_sprite_2d = NodePath("../../AnimatedSprite2D")
 [node name="HitComponentCollisionShape2D" type="CollisionShape2D" parent="HitComponent" unique_id=547643207]
 shape = SubResource("CircleShape2D_djydg")
 debug_color = Color(0.9820115, 0, 0.3701518, 0.41960785)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1961137227]
+zoom = Vector2(2, 2)
+limit_left = 0
+limit_top = 0
+limit_right = 640
+limit_bottom = 360
+position_smoothing_enabled = true
+script = ExtResource("11_djydg")
