@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bfld7eo5khdf"]
+
+[ext_resource type="Texture2D" uid="uid://y2e4gk54v4ee" path="res://assets/Sprout Lands - Sprites - Basic pack/Objects/Simple_Milk_and_grass_item.png" id="1_h1788"]
+[ext_resource type="PackedScene" uid="uid://bos4u6mri0agg" path="res://scenes/components/collectable_component.tscn" id="2_8f0fc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_h452w"]
+radius = 6.0
+
+[node name="Milk" type="Sprite2D" unique_id=2133875401]
+y_sort_enabled = true
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_h1788")
+hframes = 4
+frame = 2
+
+[node name="CollectableComponent" parent="." unique_id=1088823395 instance=ExtResource("2_8f0fc")]
+collectable_name = "milk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollectableComponent" unique_id=1075970165]
+position = Vector2(0, 2)
+shape = SubResource("CircleShape2D_h452w")

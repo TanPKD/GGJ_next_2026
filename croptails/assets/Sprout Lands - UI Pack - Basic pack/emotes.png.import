@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://da68gxyvjp5yt"
-path="res://.godot/imported/Sprite sheet for Basic Pack.png-eb5d42d303074e6a3f5b83edb60cbdb7.ctex"
+uid="uid://q81e0sfccwwu"
+path="res://.godot/imported/emotes.png-33ab8ffed32f3686e16e15c276155492.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Sprite sheet for Basic Pack.png"
-dest_files=["res://.godot/imported/Sprite sheet for Basic Pack.png-eb5d42d303074e6a3f5b83edb60cbdb7.ctex"]
+source_file="res://assets/Sprout Lands - UI Pack - Basic pack/emotes.png"
+dest_files=["res://.godot/imported/emotes.png-33ab8ffed32f3686e16e15c276155492.ctex"]
 
 [params]
 

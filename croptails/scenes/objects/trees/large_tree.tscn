@@ -17,7 +17,7 @@ atlas = ExtResource("1_ivetc")
 region = Rect2(16, 0, 32, 32)
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0ia52"]
-radius = 4.0
+radius = 3.0
 height = 10.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_6vpey"]

@@ -4,6 +4,11 @@
 [ext_resource type="PackedScene" uid="uid://cvgm7gain1wk6" path="res://scenes/characters/cow/cow.tscn" id="2_8si6d"]
 [ext_resource type="PackedScene" uid="uid://o1jnm6arnte6" path="res://scenes/characters/chicken/chicken.tscn" id="2_m34e0"]
 [ext_resource type="PackedScene" uid="uid://dmng0y6272h6c" path="res://scenes/characters/player/player.tscn" id="2_yowpb"]
+[ext_resource type="PackedScene" uid="uid://d0dhtip02w7f6" path="res://scenes/ui/game_screen.tscn" id="5_8si6d"]
+[ext_resource type="PackedScene" uid="uid://bqxtefiwxsar4" path="res://scenes/objects/egg.tscn" id="6_n4kjy"]
+[ext_resource type="PackedScene" uid="uid://bfld7eo5khdf" path="res://scenes/objects/milk.tscn" id="7_apel0"]
+[ext_resource type="PackedScene" uid="uid://b3p70xrsjkplt" path="res://scenes/objects/corn.tscn" id="8_ti5cq"]
+[ext_resource type="PackedScene" uid="uid://i70dnc0cdl5m" path="res://scenes/objects/tomato.tscn" id="9_dc2t5"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_yowpb"]
 vertices = PackedVector2Array(130, 30.90625, 222, 30.09375, 222, 46, 130, 46, 238, 46, 238, 79, 226, 79, 254, 79, 254, 96, 226, 96, 130, 79, 130, 64, 114, 64, 114, 46)
@@ -76,3 +81,35 @@ position = Vector2(136, 47)
 
 [node name="Player" parent="." unique_id=314041540 instance=ExtResource("2_yowpb")]
 position = Vector2(326, 240)
+
+[node name="GameScreen" parent="." unique_id=879063723 instance=ExtResource("5_8si6d")]
+
+[node name="Egg" parent="." unique_id=2133875401 instance=ExtResource("6_n4kjy")]
+position = Vector2(270, 153)
+
+[node name="Egg2" parent="." unique_id=973549724 instance=ExtResource("6_n4kjy")]
+position = Vector2(281, 160)
+
+[node name="Egg3" parent="." unique_id=930683676 instance=ExtResource("6_n4kjy")]
+position = Vector2(279, 148)
+
+[node name="Milk" parent="." unique_id=68219619 instance=ExtResource("7_apel0")]
+position = Vector2(291, 152)
+
+[node name="Milk2" parent="." unique_id=1094916332 instance=ExtResource("7_apel0")]
+position = Vector2(300, 147)
+
+[node name="Milk3" parent="." unique_id=1534802587 instance=ExtResource("7_apel0")]
+position = Vector2(304, 157)
+
+[node name="CornHarvest" parent="." unique_id=1861871569 instance=ExtResource("8_ti5cq")]
+position = Vector2(292, 164)
+
+[node name="CornHarvest2" parent="." unique_id=478356442 instance=ExtResource("8_ti5cq")]
+position = Vector2(278, 170)
+
+[node name="TomatoHarvest" parent="." unique_id=1548546480 instance=ExtResource("9_dc2t5")]
+position = Vector2(304, 168)
+
+[node name="TomatoHarvest2" parent="." unique_id=1693727663 instance=ExtResource("9_dc2t5")]
+position = Vector2(314, 157)
