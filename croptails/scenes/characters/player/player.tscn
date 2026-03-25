@@ -11,6 +11,7 @@
 [ext_resource type="Script" uid="uid://t5ormpmrmxhm" path="res://scenes/characters/player/watering_state.gd" id="9_42irl"]
 [ext_resource type="PackedScene" uid="uid://colg44otebqsu" path="res://scenes/components/hit_component.tscn" id="10_3xnwo"]
 [ext_resource type="Script" uid="uid://bslfbrbqosvec" path="res://scenes/characters/player/camera2D.gd" id="11_djydg"]
+[ext_resource type="PackedScene" uid="uid://fqipt7o4diur" path="res://scenes/scene/pause_menu.tscn" id="12_bsn6e"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hss88"]
 atlas = ExtResource("1_t61fv")
@@ -466,3 +467,5 @@ limit_right = 640
 limit_bottom = 360
 position_smoothing_enabled = true
 script = ExtResource("11_djydg")
+
+[node name="PauseUI" parent="." unique_id=945658527 instance=ExtResource("12_bsn6e")]

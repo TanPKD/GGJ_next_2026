@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://coyuemob2vg4n"
-path="res://.godot/imported/梗图.png-5133e04cbf048c40abcccbad9838da96.ctex"
+uid="uid://birm8nsjwsnai"
+path="res://.godot/imported/pause_pressed.png-91165134d0ee78294e74b8e95f637a69.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://pictures/梗图.png"
-dest_files=["res://.godot/imported/梗图.png-5133e04cbf048c40abcccbad9838da96.ctex"]
+source_file="res://pictures/buttons/button_paused/pause_pressed.png"
+dest_files=["res://.godot/imported/pause_pressed.png-91165134d0ee78294e74b8e95f637a69.ctex"]
 
 [params]
 

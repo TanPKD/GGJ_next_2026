@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://blwgba5wfvnbj"
-path="res://.godot/imported/hunter.png-6b005cd35958df9542c8366b709f27ad.ctex"
+uid="uid://coyuemob2vg4n"
+path="res://.godot/imported/梗图.png-34057eed86e96fa427e1ef2f1da8af91.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://pictures/hunter.png"
-dest_files=["res://.godot/imported/hunter.png-6b005cd35958df9542c8366b709f27ad.ctex"]
+source_file="res://pictures/backgrounds/梗图.png"
+dest_files=["res://.godot/imported/梗图.png-34057eed86e96fa427e1ef2f1da8af91.ctex"]
 
 [params]
 

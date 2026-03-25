@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cdqb8svv8dp2d"
-path="res://.godot/imported/hunter3.png-0eb405cbfb7951c83b70dc2c443ff805.ctex"
+uid="uid://c64tajoyjj2m0"
+path="res://.godot/imported/farmer3.png-b64cb12bf384a07efc039692892676b6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://pictures/hunter3.png"
-dest_files=["res://.godot/imported/hunter3.png-0eb405cbfb7951c83b70dc2c443ff805.ctex"]
+source_file="res://pictures/characters/characters_button/farmer3.png"
+dest_files=["res://.godot/imported/farmer3.png-b64cb12bf384a07efc039692892676b6.ctex"]
 
 [params]
 
