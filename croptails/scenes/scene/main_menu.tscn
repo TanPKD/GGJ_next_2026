@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" path="res://scenes/scene/main_menu.gd" id="1_x647b"]
 [ext_resource type="Texture2D" uid="uid://coyuemob2vg4n" path="res://pictures/backgrounds/梗图.png" id="2_gi87k"]
+[ext_resource type="AudioStream" uid="uid://bud8p60a2gde3" path="res://sounds/sound_button/button-click.wav" id="3_gi87k"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rcfat"]
 texture = ExtResource("2_gi87k")
@@ -65,7 +66,7 @@ shadow_offset = Vector2(0, 2.5)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_itlps"]
 
-[node name="MainMenu" type="Control" unique_id=504949328]
+[node name="MainMenu" type="Control" unique_id=504949328 node_paths=PackedStringArray("button_sound")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -73,6 +74,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_x647b")
+button_sound = NodePath("ButtonClick")
 
 [node name="Panel" type="Panel" parent="." unique_id=430218645]
 z_index = -10
@@ -227,6 +229,9 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_umnae")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_y5crb")
 action_mode = 0
 text = "back"
+
+[node name="ButtonClick" type="AudioStreamPlayer" parent="." unique_id=846872511]
+stream = ExtResource("3_gi87k")
 
 [connection signal="pressed" from="main_main_menu/Button1" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="main_main_menu/Button2" to="." method="_on_setting_pressed"]

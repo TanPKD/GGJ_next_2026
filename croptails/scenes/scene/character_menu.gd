@@ -18,6 +18,8 @@ func _on_next_day_pressed() -> void:
 '''
 extends Control
 
+@export var button_sound: AudioStreamPlayer
+
 # ===== 三组变量（可被其他场景读取）=====
 # 【三组选择结果变量】
 # 用来记录每一组当前选中的职业（hunter / farmer / builder）
@@ -88,7 +90,7 @@ func _ready():
 # group_id → 当前点击的是第几组（1 / 2 / 3）
 # role     → 当前点击的职业（hunter / farmer / builder）
 func _on_role_pressed(group_id: int, role: String):
-	
+	button_sound.play()
 	# ① 取消“其他组”中相同职业的选中状态
 	#
 	# 规则：
@@ -165,5 +167,6 @@ func _on_next_day_pressed() -> void:
 	print(CharactersChosen.group1_choice)
 	print(CharactersChosen.group2_choice)
 	print(CharactersChosen.group3_choice)
+	button_sound.play()
 	const DEFAULT_SCENE_PATH := "res://scenes/test/test_scene_layer.tscn"
 	Scene_Manager.change_scene(DEFAULT_SCENE_PATH)
