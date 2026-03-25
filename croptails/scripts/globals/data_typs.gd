@@ -1,6 +1,15 @@
 class_name DataTypes
 extends RefCounted
 
+enum GrowthStates {
+	Seed,
+	Germination,
+	Vegetative,
+	Reproduction,
+	Maturity,
+	Harvesting
+}
+
 enum Tools {
 	None,
 	AxeWood,
