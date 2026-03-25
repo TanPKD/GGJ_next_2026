@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://6qoba0efgapq"]
 
-[ext_resource type="Script" path="res://scenes/scene/character_menu.gd" id="1_4bh4p"]
+[ext_resource type="Script" uid="uid://ce03qde1bsysp" path="res://scenes/scene/character_menu.gd" id="1_4bh4p"]
 [ext_resource type="Texture2D" uid="uid://dy0six60qg6c5" path="res://pictures/backgrounds/梗图2.jpg" id="1_ijmyt"]
 [ext_resource type="Texture2D" uid="uid://do21yrw3sbtpt" path="res://pictures/backgrounds/梗图3.jpg" id="2_ijqeb"]
 [ext_resource type="Texture2D" uid="uid://blwgba5wfvnbj" path="res://pictures/characters/characters_button/hunter.png" id="2_op6yf"]

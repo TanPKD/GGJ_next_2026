@@ -17,8 +17,8 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-Scene_Manager="*uid://bikuq3oe11fwe"
-CharactersChosen="*uid://c26hvlxmgro4r"
+Scene_Manager="*res://scenes/scene/scene_manager.tscn"
+CharactersChosen="*res://scripts/globals/characters_chosen.gd"
 
 [display]
 
