@@ -39,6 +39,7 @@ folder_colors={
 "res://scenes/scene/": "blue",
 "res://scripts/": "pink",
 "res://shader/": "blue",
+"res://sounds/": "blue",
 "res://tilesets/": "yellow"
 }
 

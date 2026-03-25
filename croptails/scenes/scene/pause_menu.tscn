@@ -4,6 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://b2adtv6yuydr4" path="res://pictures/buttons/button_paused/pause_normal.png" id="2_6ao43"]
 [ext_resource type="Texture2D" uid="uid://birm8nsjwsnai" path="res://pictures/buttons/button_paused/pause_pressed.png" id="3_ns0ul"]
 [ext_resource type="Texture2D" uid="uid://8ts8me3cyxjy" path="res://pictures/buttons/button_paused/pause_hover.png" id="4_x3fwk"]
+[ext_resource type="AudioStream" uid="uid://dlwxltvxxyqj1" path="res://sounds/BGM/Ludum Dare 38 01.ogg" id="5_6ao43"]
+[ext_resource type="AudioStream" uid="uid://bud8p60a2gde3" path="res://sounds/sound_button/button-click.wav" id="6_ns0ul"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ep3bb"]
 bg_color = Color(0, 0, 0, 0.49019608)
@@ -37,10 +39,16 @@ shadow_offset = Vector2(0, 2.5)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1ii8v"]
 
-[node name="PauseUI" type="CanvasLayer" unique_id=945658527 node_paths=PackedStringArray("pause_panel")]
+[node name="PauseUI" type="CanvasLayer" unique_id=945658527 node_paths=PackedStringArray("pause_panel", "BGM_Player", "pause_sound")]
 process_mode = 3
 script = ExtResource("1_fvor2")
 pause_panel = NodePath("Control/Panel")
+BGM_Player = NodePath("BGM")
+pause_sound = NodePath("ButtonClick")
+
+[node name="BGM" type="AudioStreamPlayer" parent="." unique_id=1529316056]
+stream = ExtResource("5_6ao43")
+autoplay = true
 
 [node name="Control" type="Control" parent="." unique_id=1276172392]
 layout_mode = 3
@@ -139,6 +147,9 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_d544f")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_1ii8v")
 action_mode = 0
 text = "退出游戏"
+
+[node name="ButtonClick" type="AudioStreamPlayer" parent="." unique_id=461998930]
+stream = ExtResource("6_ns0ul")
 
 [connection signal="pressed" from="Control/PauseButton" to="." method="pause"]
 [connection signal="pressed" from="Control/Panel/VBoxContainer/ResumeButton" to="." method="unpause"]

@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://dec54v2yhe0sr" path="res://pictures/characters/characters_button/builder.png" id="8_8hev4"]
 [ext_resource type="Texture2D" uid="uid://b8pidjo3dn1ot" path="res://pictures/characters/characters_button/builder3.png" id="9_qdcr5"]
 [ext_resource type="Texture2D" uid="uid://dckr55fojtoil" path="res://pictures/characters/characters_button/builder2.png" id="10_vi6ec"]
+[ext_resource type="AudioStream" uid="uid://bud8p60a2gde3" path="res://sounds/sound_button/button-click.wav" id="14_qy06r"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bj53o"]
 bg_color = Color(0.39215687, 0.39215687, 0.39215687, 1)
@@ -50,7 +51,7 @@ shadow_offset = Vector2(0, 2.5)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8hev4"]
 
-[node name="CharacterMenu" type="Control" unique_id=1503331984]
+[node name="CharacterMenu" type="Control" unique_id=1503331984 node_paths=PackedStringArray("button_sound")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -58,6 +59,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_4bh4p")
+button_sound = NodePath("ButtonClick")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=840533747]
 layout_mode = 1
@@ -312,5 +314,8 @@ theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_offset_y = 5
 theme_override_font_sizes/font_size = 36
 text = "选择今天的工作分配"
+
+[node name="ButtonClick" type="AudioStreamPlayer" parent="." unique_id=954655311]
+stream = ExtResource("14_qy06r")
 
 [connection signal="pressed" from="Button" to="." method="_on_next_day_pressed"]
