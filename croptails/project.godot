@@ -18,7 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 Scene_Manager="*uid://bikuq3oe11fwe"
-CharactersChosen="*uid://1py5lxfcqujp"
+CharactersChosen="*uid://c26hvlxmgro4r"
 
 [display]
 
@@ -41,6 +41,10 @@ folder_colors={
 "res://shader/": "blue",
 "res://tilesets/": "yellow"
 }
+
+[global_group]
+
+navigation_polygon_source_geometry_group=""
 
 [input]
 
@@ -94,10 +98,12 @@ escape={
 2d_physics/layer_1="Ground"
 2d_navigation/layer_1="Chicken Navigation"
 2d_physics/layer_2="Player"
+2d_navigation/layer_2="Cow Navigation"
 2d_physics/layer_3="Interactable"
 2d_physics/layer_4="Tool"
 2d_physics/layer_5="Object"
 2d_physics/layer_6="Collectable"
+2d_physics/layer_7="NPC"
 
 [physics]
 
