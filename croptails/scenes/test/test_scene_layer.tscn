@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://bfld7eo5khdf" path="res://scenes/objects/milk.tscn" id="7_apel0"]
 [ext_resource type="PackedScene" uid="uid://b3p70xrsjkplt" path="res://scenes/objects/cornHarvest.tscn" id="8_ti5cq"]
 [ext_resource type="PackedScene" uid="uid://i70dnc0cdl5m" path="res://scenes/objects/tomato.tscn" id="9_dc2t5"]
+[ext_resource type="PackedScene" uid="uid://fqipt7o4diur" path="res://scenes/scene/pause_menu.tscn" id="10_dq002"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_yowpb"]
 vertices = PackedVector2Array(130, 30.90625, 222, 30.09375, 222, 46, 130, 46, 238, 46, 238, 79, 226, 79, 254, 79, 254, 96, 226, 96, 130, 79, 130, 64, 114, 64, 114, 46)
@@ -113,3 +114,5 @@ position = Vector2(304, 168)
 
 [node name="TomatoHarvest2" parent="." unique_id=1693727663 instance=ExtResource("9_dc2t5")]
 position = Vector2(314, 157)
+
+[node name="PauseUI" parent="." unique_id=945658527 instance=ExtResource("10_dq002")]
