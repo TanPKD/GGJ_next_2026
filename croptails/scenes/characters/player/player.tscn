@@ -10,7 +10,7 @@
 [ext_resource type="Script" uid="uid://bsoilleh2cgnc" path="res://scenes/characters/player/tilling_state.gd" id="8_xuses"]
 [ext_resource type="Script" uid="uid://t5ormpmrmxhm" path="res://scenes/characters/player/watering_state.gd" id="9_42irl"]
 [ext_resource type="PackedScene" uid="uid://colg44otebqsu" path="res://scenes/components/hit_component.tscn" id="10_3xnwo"]
-[ext_resource type="Script" path="res://scenes/characters/player/camera2D.gd" id="11_djydg"]
+[ext_resource type="Script" uid="uid://bslfbrbqosvec" path="res://scenes/characters/player/camera2D.gd" id="11_djydg"]
 [ext_resource type="PackedScene" uid="uid://fqipt7o4diur" path="res://scenes/scene/pause_menu.tscn" id="12_bsn6e"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hss88"]
@@ -447,10 +447,11 @@ script = ExtResource("8_xuses")
 player = NodePath("../..")
 animated_sprite_2d = NodePath("../../AnimatedSprite2D")
 
-[node name="Watering" type="Node" parent="StateMachine" unique_id=190248393 node_paths=PackedStringArray("player", "animated_sprite_2d")]
+[node name="Watering" type="Node" parent="StateMachine" unique_id=190248393 node_paths=PackedStringArray("player", "animated_sprite_2d", "hit_component_collision_shape")]
 script = ExtResource("9_42irl")
 player = NodePath("../..")
 animated_sprite_2d = NodePath("../../AnimatedSprite2D")
+hit_component_collision_shape = NodePath("../../HitComponent/HitComponentCollisionShape2D")
 
 [node name="HitComponent" parent="." unique_id=240871763 instance=ExtResource("10_3xnwo")]
 current_tool = 0

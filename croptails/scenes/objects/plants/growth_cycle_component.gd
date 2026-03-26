@@ -1,7 +1,7 @@
 class_name GrowthCycleComponent
 extends Node
 
-@export var current_growth_state: DataTypes.GrowthStates = DataTypes.GrowthStates.Seed
+@export var current_growth_state: DataTypes.GrowthStates = DataTypes.GrowthStates.Germination
 @export_range(5,365) var days_until_harvest: int = 7
 
 signal crop_maturity

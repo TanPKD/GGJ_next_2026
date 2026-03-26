@@ -21,8 +21,10 @@ vframes = 2
 frame = 1
 
 [node name="WateringParticles" parent="." unique_id=1969609125 instance=ExtResource("2_ofjf8")]
+sub_emitter = NodePath(".")
 
 [node name="FlowerParticles" parent="." unique_id=1744218820 instance=ExtResource("3_ofjf8")]
+sub_emitter = NodePath(".")
 
 [node name="GrowthCycleComponent" parent="." unique_id=1237037226 instance=ExtResource("5_q3ekf")]
 
