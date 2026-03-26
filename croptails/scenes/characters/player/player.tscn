@@ -413,7 +413,7 @@ position = Vector2(0, -8)
 sprite_frames = SubResource("SpriteFrames_omk8d")
 animation = &"idle_front"
 autoplay = "idle_front"
-frame_progress = 0.33404055
+frame_progress = 0.71365243
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2033981789]
 position = Vector2(2.3841858e-07, -3.5)
@@ -461,6 +461,7 @@ debug_color = Color(0.9820115, 0, 0.3701518, 0.41960785)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1961137227]
 zoom = Vector2(2, 2)
+limit_enabled = false
 limit_left = 0
 limit_top = 0
 limit_right = 640
