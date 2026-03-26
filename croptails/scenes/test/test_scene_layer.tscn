@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://d0dhtip02w7f6" path="res://scenes/ui/game_screen.tscn" id="5_8si6d"]
 [ext_resource type="PackedScene" uid="uid://bqxtefiwxsar4" path="res://scenes/objects/egg.tscn" id="6_n4kjy"]
 [ext_resource type="PackedScene" uid="uid://bfld7eo5khdf" path="res://scenes/objects/milk.tscn" id="7_apel0"]
-[ext_resource type="PackedScene" uid="uid://b3p70xrsjkplt" path="res://scenes/objects/corn.tscn" id="8_ti5cq"]
+[ext_resource type="PackedScene" uid="uid://b3p70xrsjkplt" path="res://scenes/objects/cornHarvest.tscn" id="8_ti5cq"]
 [ext_resource type="PackedScene" uid="uid://i70dnc0cdl5m" path="res://scenes/objects/tomato.tscn" id="9_dc2t5"]
 [ext_resource type="PackedScene" uid="uid://fqipt7o4diur" path="res://scenes/scene/pause_menu.tscn" id="10_dq002"]
 
