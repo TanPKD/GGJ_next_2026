@@ -1,6 +1,6 @@
 extends Node2D
 
-var corn_harvest_scene = preload("res://scenes/objects/cornHarvest.tscn")
+var corn_harvest_scene = preload("res://scenes/objects/plants/cornHarvest.tscn")
 
 @onready var sprite_2d: Sprite2D = $Sprite2D
 @onready var WateringParticles: GPUParticles2D = $WateringParticles
@@ -24,10 +24,11 @@ func _process(delta:float) -> void:
 	
 	if growth_state == DataTypes.GrowthStates.Maturity:
 		FlowerParticles.emitting = true
+
 func onHurt(hit_damage: int) -> void:
 	if !GrowthCycleComponent.is_watered:
 		WateringParticles.emitting = true
-		await get_tree().create.timer(5.0).timeout
+		await get_tree().create_timer(5.0).timeout
 		WateringParticles.emitting = false
 		GrowthCycleComponent.is_watered = true
 
