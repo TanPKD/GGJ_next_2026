@@ -76,7 +76,6 @@ shape = SubResource("CircleShape2D_kc4rr")
 path_desired_distance = 10.0
 navigation_layers = 2
 path_postprocessing = 1
-avoidance_enabled = true
 debug_use_custom = true
 debug_path_custom_color = Color(0.8178584, 0.09682179, 0.9776897, 1)
 

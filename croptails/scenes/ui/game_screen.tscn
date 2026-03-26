@@ -18,8 +18,10 @@ theme = ExtResource("1_e2vrk")
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 8
+mouse_filter = 1
 
 [node name="InventoryPanel" parent="MarginContainer" unique_id=415142134 instance=ExtResource("3_gusqm")]
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 4
+mouse_filter = 1

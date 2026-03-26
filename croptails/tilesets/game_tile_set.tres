@@ -9,7 +9,6 @@
 [ext_resource type="Texture2D" uid="uid://byasrddcppaim" path="res://assets/Sprout Lands - Sprites - Basic pack/Objects/Basic_Grass_Biom_things.png" id="4_7cqdy"]
 [ext_resource type="PackedScene" uid="uid://bwcqdeqg2myun" path="res://scenes/objects/rocks/rock.tscn" id="4_8yb5x"]
 [ext_resource type="Texture2D" uid="uid://bd8mg8awnj12f" path="res://assets/Sprout Lands - Sprites - Basic pack/Tilesets/Fences.png" id="7_xa2g7"]
-[ext_resource type="Texture2D" uid="uid://c7qolfbonjf8v" path="res://assets/Sprout Lands - Sprites - Basic pack/Objects/Wood_Bridge.png" id="10_jutaf"]
 [ext_resource type="Texture2D" uid="uid://bfjvo2s50yom8" path="res://assets/Sprout Lands - Sprites - Basic pack/Objects/Paths.png" id="11_8u0cr"]
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_uk42g"]
@@ -697,21 +696,6 @@ texture = ExtResource("4_7cqdy")
 1:3/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8u0cr"]
-texture = ExtResource("10_jutaf")
-0:0/0 = 0
-0:1/0 = 0
-0:2/0 = 0
-1:0/0 = 0
-1:1/0 = 0
-1:2/0 = 0
-2:0/0 = 0
-3:0/0 = 0
-4:0/0 = 0
-2:1/0 = 0
-3:1/0 = 0
-4:1/0 = 0
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2yqys"]
 texture = ExtResource("11_8u0cr")
 0:0/0 = 0
 0:0/0/terrain_set = 0
@@ -726,6 +710,26 @@ texture = ExtResource("11_8u0cr")
 0:2/0/terrain_set = 0
 0:2/0/terrain = 3
 0:2/0/terrains_peering_bit/top_side = 3
+1:1/0 = 0
+1:1/0/terrain_set = 0
+1:1/0/terrain = 3
+1:1/0/terrains_peering_bit/right_side = 3
+1:1/0/terrains_peering_bit/bottom_side = 3
+1:2/0 = 0
+1:2/0/terrain_set = 0
+1:2/0/terrain = 3
+1:2/0/terrains_peering_bit/right_side = 3
+1:2/0/terrains_peering_bit/top_side = 3
+2:2/0 = 0
+2:2/0/terrain_set = 0
+2:2/0/terrain = 3
+2:2/0/terrains_peering_bit/left_side = 3
+2:2/0/terrains_peering_bit/top_side = 3
+2:1/0 = 0
+2:1/0/terrain_set = 0
+2:1/0/terrain = 3
+2:1/0/terrains_peering_bit/bottom_side = 3
+2:1/0/terrains_peering_bit/left_side = 3
 1:3/0 = 0
 1:3/0/terrain_set = 0
 1:3/0/terrain = 3
@@ -739,26 +743,6 @@ texture = ExtResource("11_8u0cr")
 3:3/0/terrain_set = 0
 3:3/0/terrain = 3
 3:3/0/terrains_peering_bit/left_side = 3
-2:1/0 = 0
-2:1/0/terrain_set = 0
-2:1/0/terrain = 3
-2:1/0/terrains_peering_bit/bottom_side = 3
-2:1/0/terrains_peering_bit/left_side = 3
-2:2/0 = 0
-2:2/0/terrain_set = 0
-2:2/0/terrain = 3
-2:2/0/terrains_peering_bit/left_side = 3
-2:2/0/terrains_peering_bit/top_side = 3
-1:2/0 = 0
-1:2/0/terrain_set = 0
-1:2/0/terrain = 3
-1:2/0/terrains_peering_bit/right_side = 3
-1:2/0/terrains_peering_bit/top_side = 3
-1:1/0 = 0
-1:1/0/terrain_set = 0
-1:1/0/terrain = 3
-1:1/0/terrains_peering_bit/right_side = 3
-1:1/0/terrains_peering_bit/bottom_side = 3
 
 [resource]
 physics_layer_0/collision_layer = 1
@@ -777,5 +761,4 @@ sources/4 = SubResource("TileSetAtlasSource_7cqdy")
 sources/5 = SubResource("TileSetAtlasSource_pudl8")
 sources/0 = SubResource("TileSetScenesCollectionSource_uk42g")
 sources/3 = SubResource("TileSetAtlasSource_jutaf")
-sources/6 = SubResource("TileSetAtlasSource_8u0cr")
-sources/7 = SubResource("TileSetAtlasSource_2yqys")
+sources/8 = SubResource("TileSetAtlasSource_8u0cr")
