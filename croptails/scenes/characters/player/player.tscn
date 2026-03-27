@@ -453,6 +453,7 @@ animated_sprite_2d = NodePath("../../AnimatedSprite2D")
 hit_component_collision_shape = NodePath("../../HitComponent/HitComponentCollisionShape2D")
 
 [node name="HitComponent" parent="." unique_id=240871763 instance=ExtResource("10_3xnwo")]
+current_tool = 0
 
 [node name="HitComponentCollisionShape2D" type="CollisionShape2D" parent="HitComponent" unique_id=547643207]
 shape = SubResource("CircleShape2D_djydg")
