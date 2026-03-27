@@ -27,11 +27,13 @@ func _on_setting_pressed() -> void:
 	
 	
 func _on_credit_pressed() -> void:
+	$Label.visible = false
 	$main_main_menu.visible = false
 	$credit_menu.visible = true
 	button_sound.play()
 	
 func _on_credit_back_pressed() -> void:
+	$Label.visible = true
 	$main_main_menu.visible = true
 	$credit_menu.visible = false
 	button_sound.play()
