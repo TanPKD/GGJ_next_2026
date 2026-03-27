@@ -10,6 +10,12 @@ enum GrowthStates {
 	Harvesting
 }
 
+enum CurrentCharacter {
+	Hunter,
+	Farmer,
+	Smith
+}
+
 enum Tools {
 	None,
 	AxeWood,

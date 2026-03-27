@@ -6,4 +6,5 @@
 collision_layer = 8
 collision_mask = 16
 script = ExtResource("1_t7wh5")
-current_tool = 1
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

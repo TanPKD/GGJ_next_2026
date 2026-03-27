@@ -6,8 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://dmng0y6272h6c" path="res://scenes/characters/player/player.tscn" id="2_yowpb"]
 [ext_resource type="PackedScene" uid="uid://bqxtefiwxsar4" path="res://scenes/objects/egg.tscn" id="6_n4kjy"]
 [ext_resource type="PackedScene" uid="uid://bfld7eo5khdf" path="res://scenes/objects/milk.tscn" id="7_apel0"]
-[ext_resource type="PackedScene" uid="uid://b3p70xrsjkplt" path="res://scenes/objects/cornHarvest.tscn" id="8_ti5cq"]
-[ext_resource type="PackedScene" uid="uid://i70dnc0cdl5m" path="res://scenes/objects/tomato.tscn" id="9_dc2t5"]
+[ext_resource type="PackedScene" uid="uid://b3p70xrsjkplt" path="res://scenes/objects/plants/cornHarvest.tscn" id="8_ti5cq"]
+[ext_resource type="PackedScene" uid="uid://i70dnc0cdl5m" path="res://scenes/objects/tomatoHarvest.tscn" id="9_dc2t5"]
 [ext_resource type="PackedScene" uid="uid://fqipt7o4diur" path="res://scenes/scene/pause_menu.tscn" id="10_dq002"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_yowpb"]
@@ -80,7 +80,7 @@ position = Vector2(126, 59)
 position = Vector2(136, 47)
 
 [node name="Player" parent="." unique_id=314041540 instance=ExtResource("2_yowpb")]
-position = Vector2(326, 240)
+position = Vector2(325, 241)
 
 [node name="PauseUI" parent="." unique_id=945658527 instance=ExtResource("10_dq002")]
 
@@ -113,3 +113,5 @@ position = Vector2(304, 168)
 
 [node name="TomatoHarvest2" parent="." unique_id=1693727663 instance=ExtResource("9_dc2t5")]
 position = Vector2(314, 157)
+
+[node name="PauseUI" parent="." unique_id=945658527 instance=ExtResource("10_dq002")]
