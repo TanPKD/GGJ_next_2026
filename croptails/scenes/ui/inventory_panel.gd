@@ -6,6 +6,7 @@ extends PanelContainer
 @onready var tomato_label: Label = $MarginContainer/VBoxContainer/Tomato/TomatoLabel
 @onready var egg_label: Label = $MarginContainer/VBoxContainer/Egg/EggLabel
 @onready var milk_label: Label = $MarginContainer/VBoxContainer/Milk/MilkLabel
+@onready var meat_label: Label = $MarginContainer/VBoxContainer/Meat/MeatLabel
 
 
 func _ready() -> void:
@@ -13,6 +14,9 @@ func _ready() -> void:
 
 func on_inventory_changed() -> void:
 	var inventory: Dictionary = InventoryManager.inventory
+	
+	if inventory.has("meat"):
+		meat_label.text = str(inventory["meat"])
 	
 	if inventory.has("log"):
 		log_label.text = str(inventory["log"])

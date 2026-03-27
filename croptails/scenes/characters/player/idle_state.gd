@@ -26,7 +26,8 @@ func _on_physics_process(_delta : float) -> void:
 		transition.emit("Tilling")
 	if player.current_tool==DataTypes.Tools.WaterCrops and GameInputEvents.use_tool():
 		transition.emit("Watering")
-	
+	if player.current_tool==DataTypes.Tools.Stick and GameInputEvents.use_tool():
+		transition.emit("Attacking")
 
 
 func _on_next_transitions() -> void:

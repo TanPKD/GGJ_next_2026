@@ -42,7 +42,7 @@ shape = SubResource("CapsuleShape2D_0ia52")
 
 [node name="HurtComponent" parent="." unique_id=1314146106 instance=ExtResource("2_wjqkr")]
 material = SubResource("ShaderMaterial_6vpey")
-tool = 1
+tool = 2
 
 [node name="HurtComponentCollisionShape2D" type="CollisionShape2D" parent="HurtComponent" unique_id=1591374285]
 position = Vector2(0, 8.5)

@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bhqyxfmv0p27r"]
+
+[ext_resource type="Texture2D" uid="uid://bbtdoqcdynfu1" path="res://pictures/1774597214833.png" id="1_jngrv"]
+[ext_resource type="PackedScene" uid="uid://bos4u6mri0agg" path="res://scenes/components/collectable_component.tscn" id="2_p0n6s"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p0n6s"]
+atlas = ExtResource("1_jngrv")
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_h452w"]
+radius = 6.0
+
+[node name="Meat" type="Sprite2D" unique_id=2133875401]
+y_sort_enabled = true
+scale = Vector2(0.5, 0.5)
+texture = SubResource("AtlasTexture_p0n6s")
+
+[node name="CollectableComponent" parent="." unique_id=1088823395 instance=ExtResource("2_p0n6s")]
+collectable_name = "meat"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollectableComponent" unique_id=1075970165]
+shape = SubResource("CircleShape2D_h452w")

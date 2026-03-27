@@ -22,7 +22,8 @@ enum Tools {
 	TillGround,
 	WaterCrops,
 	PlantCorn,
-	PlantTomato
+	PlantTomato,
+	Stick
 }
 # 这里有大量的历史遗落性问题，注释的代码基本上就是给我回忆用的废稿
 '''

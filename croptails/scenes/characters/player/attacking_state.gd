@@ -23,19 +23,19 @@ func _on_next_transitions() -> void:
 
 func _on_enter() -> void:
 	if player.player_direction==Vector2.UP:
-		animated_sprite_2d.play("watering_back")
+		animated_sprite_2d.play("attack_back")
 		hit_component_collision_shape.position=Vector2(0,-18)
 	elif player.player_direction == Vector2.RIGHT:
-		animated_sprite_2d.play("watering_right")
-		hit_component_collision_shape.position=Vector2(18,0)
+		animated_sprite_2d.play("attack_right")
+		hit_component_collision_shape.position=Vector2(9,0)
 	elif player.player_direction == Vector2.DOWN:
-		animated_sprite_2d.play("watering_front")
+		animated_sprite_2d.play("attack_front")
 		hit_component_collision_shape.position=Vector2(0,3)
 	elif player.player_direction == Vector2.LEFT:
-		animated_sprite_2d.play("watering_left")
-		hit_component_collision_shape.position=Vector2(-18,0)
+		animated_sprite_2d.play("attack_left")
+		hit_component_collision_shape.position=Vector2(-9,0)
 	else:
-		animated_sprite_2d.play("watering_front")
+		animated_sprite_2d.play("attack_front")
 		hit_component_collision_shape.position=Vector2(0,3)
 	hit_component_collision_shape.disabled=false
 		
