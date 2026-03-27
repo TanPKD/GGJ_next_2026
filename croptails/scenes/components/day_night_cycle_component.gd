@@ -116,9 +116,10 @@ func on_game_time(time: float) -> void:
 # 修改管理器里的速度
 func set_game_speed(multiplier: float):
 	DayAndNightCycleManager.game_speed = multiplier
-
+'''
 func _input(event):
 	if event.is_action_pressed("speed_up"):
 		DayAndNightCycleManager.game_speed = 5000.0
 	elif event.is_action_released("speed_up"):
 		DayAndNightCycleManager.game_speed = 5.0
+'''
