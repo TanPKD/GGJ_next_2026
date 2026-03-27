@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://cwfycv3w5ia3e" path="res://scenes/objects/plants/corn.tscn" id="5_mw2hb"]
 [ext_resource type="PackedScene" uid="uid://dmng0y6272h6c" path="res://scenes/characters/player/player.tscn" id="6_pw3ed"]
 [ext_resource type="PackedScene" uid="uid://fqipt7o4diur" path="res://scenes/scene/pause_menu.tscn" id="7_f0qbg"]
+[ext_resource type="PackedScene" uid="uid://bpuyo80r7vicx" path="res://scenes/scene/skilltree.tscn" id="7_lpxgl"]
 [ext_resource type="PackedScene" uid="uid://b7b3a4p0pb5b2" path="res://scenes/components/day_night_cycle_component.tscn" id="8_xb8yy"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_yowpb"]
@@ -119,6 +120,7 @@ position = Vector2(1129.9999, 39.00006)
 
 [node name="DayNightCycleComponent" parent="." unique_id=1359615309 instance=ExtResource("8_xb8yy")]
 position = Vector2(23.102463, 23.28038)
+next_scene = ExtResource("7_lpxgl")
 
 [node name="Houses" type="TileMapLayer" parent="." unique_id=2094969374]
 tile_map_data = PackedByteArray("AAA+AAoABwAAAAAAAAAKAAkAAAAAAAAAAQAWAAkAAAAAAAAAAQAiAAkAAAAAAAAAAQAOABMAAAAAAAAAAQAeABMAAAAAAAAAAQAfABEACQABAAMAAAAgABEACQABAAMAAAAhABEACQABAAMAAAAiABEACQABAAMAAAAjABEACQABAAMAAAAkABEACQABAAMAAAAlABEACQABAAMAAAAgABIACQABAAQAAAAhABIACQABAAQAAAAiABIACQABAAQAAAAjABIACQABAAQAAAA=")
