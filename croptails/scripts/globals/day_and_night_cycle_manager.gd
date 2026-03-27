@@ -24,7 +24,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	time += delta * game_speed * GAME_MINUTE_DURATION
 	game_time.emit(time)
-
+	
 	recalculate_time()
 
 func set_initial_time() -> void:
