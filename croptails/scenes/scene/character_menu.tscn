@@ -3,11 +3,11 @@
 [ext_resource type="Script" uid="uid://ce03qde1bsysp" path="res://scenes/scene/character_menu.gd" id="1_4bh4p"]
 [ext_resource type="Texture2D" uid="uid://dy0six60qg6c5" path="res://pictures/backgrounds/梗图2.jpg" id="1_ijmyt"]
 [ext_resource type="Texture2D" uid="uid://do21yrw3sbtpt" path="res://pictures/backgrounds/梗图3.jpg" id="2_ijqeb"]
-[ext_resource type="Texture2D" uid="uid://blwgba5wfvnbj" path="res://pictures/characters/characters_button/hunter.png" id="2_op6yf"]
-[ext_resource type="Texture2D" uid="uid://cdqb8svv8dp2d" path="res://pictures/characters/characters_button/hunter3.png" id="3_bj53o"]
 [ext_resource type="Texture2D" uid="uid://cadruyjynesmk" path="res://pictures/backgrounds/梗图4.jpg" id="3_op6yf"]
-[ext_resource type="Texture2D" uid="uid://belg6hmoel5ul" path="res://pictures/characters/characters_button/hunter2.png" id="4_58bhn"]
+[ext_resource type="Texture2D" uid="uid://dxtlnbapsbwtw" path="res://pictures/characters/characters_button/1774615394717.png" id="3_qy06r"]
+[ext_resource type="Texture2D" uid="uid://cpwqc2qvnsrt8" path="res://pictures/characters/characters_button/1774615419066.png" id="4_8hev4"]
 [ext_resource type="Texture2D" uid="uid://c4oh27ffqj31d" path="res://pictures/characters/characters_button/farmer.png" id="5_56enj"]
+[ext_resource type="Texture2D" uid="uid://jium68qwmlcv" path="res://pictures/characters/characters_button/1774615428714.png" id="5_qdcr5"]
 [ext_resource type="Texture2D" uid="uid://c64tajoyjj2m0" path="res://pictures/characters/characters_button/farmer3.png" id="6_4bh4p"]
 [ext_resource type="Texture2D" uid="uid://dhkllxhco6mwv" path="res://pictures/characters/characters_button/farmer2.png" id="7_qy06r"]
 [ext_resource type="Texture2D" uid="uid://dec54v2yhe0sr" path="res://pictures/characters/characters_button/builder.png" id="8_8hev4"]
@@ -121,10 +121,10 @@ grow_vertical = 2
 
 [node name="hunter1" type="TextureButton" parent="HBoxContainer/Panel/Panel/HBoxContainer" unique_id=764376951]
 layout_mode = 2
-texture_normal = ExtResource("2_op6yf")
-texture_pressed = ExtResource("3_bj53o")
-texture_hover = ExtResource("4_58bhn")
-texture_disabled = ExtResource("3_bj53o")
+texture_normal = ExtResource("3_qy06r")
+texture_pressed = ExtResource("4_8hev4")
+texture_hover = ExtResource("5_qdcr5")
+texture_disabled = ExtResource("4_8hev4")
 
 [node name="farmer1" type="TextureButton" parent="HBoxContainer/Panel/Panel/HBoxContainer" unique_id=1501200016]
 layout_mode = 2
@@ -185,10 +185,10 @@ grow_vertical = 2
 
 [node name="hunter2" type="TextureButton" parent="HBoxContainer/Panel2/Panel/HBoxContainer" unique_id=1925967240]
 layout_mode = 2
-texture_normal = ExtResource("2_op6yf")
-texture_pressed = ExtResource("3_bj53o")
-texture_hover = ExtResource("4_58bhn")
-texture_disabled = ExtResource("3_bj53o")
+texture_normal = ExtResource("3_qy06r")
+texture_pressed = ExtResource("4_8hev4")
+texture_hover = ExtResource("5_qdcr5")
+texture_disabled = ExtResource("4_8hev4")
 
 [node name="farmer2" type="TextureButton" parent="HBoxContainer/Panel2/Panel/HBoxContainer" unique_id=67287498]
 layout_mode = 2
@@ -249,10 +249,10 @@ grow_vertical = 2
 
 [node name="hunter3" type="TextureButton" parent="HBoxContainer/Panel3/Panel/HBoxContainer" unique_id=1373162984]
 layout_mode = 2
-texture_normal = ExtResource("2_op6yf")
-texture_pressed = ExtResource("3_bj53o")
-texture_hover = ExtResource("4_58bhn")
-texture_disabled = ExtResource("3_bj53o")
+texture_normal = ExtResource("3_qy06r")
+texture_pressed = ExtResource("4_8hev4")
+texture_hover = ExtResource("5_qdcr5")
+texture_disabled = ExtResource("4_8hev4")
 
 [node name="farmer3" type="TextureButton" parent="HBoxContainer/Panel3/Panel/HBoxContainer" unique_id=591412072]
 layout_mode = 2
