@@ -3,8 +3,6 @@
 [ext_resource type="Script" uid="uid://c1dqoabpluk7l" path="res://scenes/objects/plants/corn.gd" id="1_hgaca"]
 [ext_resource type="Texture2D" uid="uid://chgnf4tfoqlb1" path="res://assets/Sprout Lands - Sprites - Basic pack/Objects/Basic_Plants.png" id="1_hm4is"]
 [ext_resource type="PackedScene" uid="uid://iw6ss4ln5i0p" path="res://scenes/components/hurt_component.tscn" id="2_aphyd"]
-[ext_resource type="PackedScene" uid="uid://brt5vh5kopegx" path="res://scenes/objects/plants/watering_particles.tscn" id="2_ofjf8"]
-[ext_resource type="PackedScene" uid="uid://mwbrl81isnli" path="res://scenes/objects/plants/flower_particles.tscn" id="3_ofjf8"]
 [ext_resource type="PackedScene" uid="uid://drp44g324khyr" path="res://scenes/objects/plants/growth_cycle_component.tscn" id="5_q3ekf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ofjf8"]
@@ -19,12 +17,6 @@ texture = ExtResource("1_hm4is")
 hframes = 6
 vframes = 2
 frame = 1
-
-[node name="WateringParticles" parent="." unique_id=1969609125 instance=ExtResource("2_ofjf8")]
-sub_emitter = NodePath(".")
-
-[node name="FlowerParticles" parent="." unique_id=1744218820 instance=ExtResource("3_ofjf8")]
-sub_emitter = NodePath(".")
 
 [node name="GrowthCycleComponent" parent="." unique_id=1237037226 instance=ExtResource("5_q3ekf")]
 
