@@ -15,7 +15,7 @@ func _process(_delta: float) -> void:
 
 func _on_start_pressed() -> void:
 	button_sound.play()
-	const DEFAULT_SCENE_PATH := "res://scenes/scene/wild.tscn"
+	const DEFAULT_SCENE_PATH := "res://scenes/scene/character_menu.tscn"
 	Scene_Manager.change_scene(DEFAULT_SCENE_PATH)
 	# Scene_Manager.change_scene(DataTypes.scene.character_menu)
 	# 对其他关卡用，因为主页不参与游戏天数的循环

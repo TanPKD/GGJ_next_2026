@@ -168,5 +168,5 @@ func _on_next_day_pressed() -> void:
 	print(CharactersChosen.group2_choice)
 	print(CharactersChosen.group3_choice)
 	button_sound.play()
-	const DEFAULT_SCENE_PATH := "res://scenes/test/test_scene_layer.tscn"
+	const DEFAULT_SCENE_PATH := "res://scenes/scene/wild.tscn"
 	Scene_Manager.change_scene(DEFAULT_SCENE_PATH)
