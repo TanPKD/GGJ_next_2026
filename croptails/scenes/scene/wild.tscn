@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://dmng0y6272h6c" path="res://scenes/characters/player/player.tscn" id="4_mrakv"]
 [ext_resource type="PackedScene" uid="uid://fqipt7o4diur" path="res://scenes/scene/pause_menu.tscn" id="5_7h66p"]
 [ext_resource type="PackedScene" uid="uid://cwfycv3w5ia3e" path="res://scenes/objects/plants/corn.tscn" id="5_f7b3m"]
-[ext_resource type="PackedScene" path="res://scenes/components/day_night_cycle_component.tscn" id="6_jk2hq"]
+[ext_resource type="PackedScene" uid="uid://b7b3a4p0pb5b2" path="res://scenes/components/day_night_cycle_component.tscn" id="6_jk2hq"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_yowpb"]
 vertices = PackedVector2Array(1258.0938, 310.92188, 6.15625, 301.0703, 10.84375, 9.9765625, 1260.8984, 8.0078125)
