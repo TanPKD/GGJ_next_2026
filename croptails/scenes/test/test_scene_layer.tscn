@@ -16,7 +16,7 @@ polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3), PackedInt32Arr
 outlines = Array[PackedVector2Array]([PackedVector2Array(120, 21, 120, 36, 104, 36, 104, 74, 120, 74, 120, 89, 216, 89, 216, 106, 216, 106, 264, 106, 264, 69, 248, 69, 248, 36, 232, 36, 232, 20)])
 source_geometry_mode = 2
 
-[node name="TestSceneTilemapLayer" type="Node2D" unique_id=1834395011]
+[node name="TestSceneTilemapLayer2" type="Node2D" unique_id=1834395011]
 y_sort_enabled = true
 
 [node name="GameTileMap" type="Node2D" parent="." unique_id=1860964369]
