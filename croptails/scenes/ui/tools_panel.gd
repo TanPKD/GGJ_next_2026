@@ -5,6 +5,7 @@ extends PanelContainer
 @onready var tool_corn: Button = $MarginContainer/HBoxContainer/ToolCorn
 @onready var tool_tomato: Button = $MarginContainer/HBoxContainer/ToolTomato
 @onready var tool_axe: Button = $MarginContainer/HBoxContainer/ToolAxe
+@onready var tool_stick: Button = $MarginContainer/HBoxContainer/ToolStick
 
 
 func _ready() -> void:
@@ -21,6 +22,8 @@ func _ready() -> void:
 	
 	#tool_tomato.disabled = true
 	tool_tomato.focus_mode = Control.FOCUS_NONE
+	
+	tool_stick.focus_mode = Control.FOCUS_NONE
 
 
 func _on_tool_axe_pressed() -> void:
@@ -38,6 +41,10 @@ func _on_tool_corn_pressed() -> void:
 func _on_tool_tomato_pressed() -> void:
 	ToolManager.select_tool(DataTypes.Tools.PlantTomato)
 
+func _on_tool_stick_pressed() -> void:
+	ToolManager.select_tool(DataTypes.Tools.Stick)
+
+
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("release_tool"):
 		ToolManager.select_tool(DataTypes.Tools.None)
@@ -46,6 +53,7 @@ func _unhandled_input(event: InputEvent) -> void:
 		tool_watering_can.release_focus()
 		tool_corn.release_focus()
 		tool_tomato.release_focus()
+		tool_stick.release_focus()
 
 
 func on_enable_tool_button(tool: DataTypes.Tools) -> void:
@@ -61,3 +69,6 @@ func on_enable_tool_button(tool: DataTypes.Tools) -> void:
 	elif tool == DataTypes.Tools.PlantTomato:
 		tool_tomato.disabled = false
 		tool_tomato.focus_mode = Control.FOCUS_ALL
+	elif tool == DataTypes.Tools.Stick:
+		tool_stick.disabled = false
+		tool_stick.focus_mode = Control.FOCUS_ALL

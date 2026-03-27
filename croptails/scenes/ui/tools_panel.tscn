@@ -4,6 +4,10 @@
 [ext_resource type="Script" uid="uid://bavj5u6p51m5y" path="res://scenes/ui/tools_panel.gd" id="2_0jxvs"]
 [ext_resource type="Texture2D" uid="uid://r4d1fkxcdrcx" path="res://assets/Sprout Lands - Sprites - Basic pack/Objects/Basic_tools_and_meterials.png" id="2_xkgdf"]
 [ext_resource type="Texture2D" uid="uid://chgnf4tfoqlb1" path="res://assets/Sprout Lands - Sprites - Basic pack/Objects/Basic_Plants.png" id="3_a7ivs"]
+[ext_resource type="Texture2D" uid="uid://deakp8ek1gwwv" path="res://pictures/characters/characters_button/1774615686884.png" id="3_gbtgy"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3neg6"]
+atlas = ExtResource("3_gbtgy")
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_a7ivs"]
 atlas = ExtResource("2_xkgdf")
@@ -52,6 +56,13 @@ theme_override_constants/margin_bottom = 4
 layout_mode = 2
 theme_override_constants/separation = 2
 
+[node name="ToolStick" type="Button" parent="MarginContainer/HBoxContainer" unique_id=1003885166]
+custom_minimum_size = Vector2(26, 26)
+layout_mode = 2
+theme_type_variation = &"ToolButton"
+icon = SubResource("AtlasTexture_3neg6")
+icon_alignment = 1
+
 [node name="ToolAxe" type="Button" parent="MarginContainer/HBoxContainer" unique_id=1924522704]
 custom_minimum_size = Vector2(26, 26)
 layout_mode = 2
@@ -87,6 +98,7 @@ theme_type_variation = &"ToolButton"
 icon = SubResource("AtlasTexture_ur6ba")
 icon_alignment = 1
 
+[connection signal="pressed" from="MarginContainer/HBoxContainer/ToolStick" to="." method="_on_tool_stick_pressed"]
 [connection signal="pressed" from="MarginContainer/HBoxContainer/ToolAxe" to="." method="_on_tool_axe_pressed"]
 [connection signal="pressed" from="MarginContainer/HBoxContainer/ToolTilling" to="." method="_on_tool_tilling_pressed"]
 [connection signal="pressed" from="MarginContainer/HBoxContainer/ToolWateringCan" to="." method="_on_tool_watering_can_pressed"]

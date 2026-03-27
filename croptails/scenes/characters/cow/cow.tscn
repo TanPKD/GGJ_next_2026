@@ -5,6 +5,8 @@
 [ext_resource type="Script" uid="uid://ts6w1rrej2q3" path="res://scripts/state_machine/node_state_machine.gd" id="2_ilrem"]
 [ext_resource type="Script" uid="uid://bhgnnp3sw6rky" path="res://scenes/characters/npc_states/idle_state.gd" id="3_j7g5r"]
 [ext_resource type="Script" uid="uid://c74qvdn87yk4a" path="res://scenes/characters/npc_states/walk_state.gd" id="4_4jynl"]
+[ext_resource type="PackedScene" uid="uid://iw6ss4ln5i0p" path="res://scenes/components/hurt_component.tscn" id="6_cgos1"]
+[ext_resource type="PackedScene" uid="uid://csdxbnarg0twl" path="res://scenes/components/damage_component.tscn" id="7_gsrfl"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sa3qd"]
 atlas = ExtResource("1_kc4rr")
@@ -57,6 +59,9 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_kc4rr"]
 radius = 4.989785
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_1cmdg"]
+radius = 11.428571
+
 [node name="Cow" type="CharacterBody2D" unique_id=238565716]
 scale = Vector2(0.7, 0.7)
 collision_layer = 64
@@ -93,3 +98,14 @@ script = ExtResource("4_4jynl")
 character = NodePath("../..")
 animated_sprite_2d = NodePath("../../AnimatedSprite2D")
 navigation_agent_2d = NodePath("../../NavigationAgent2D")
+
+[node name="HurtComponent" parent="." unique_id=1314146106 instance=ExtResource("6_cgos1")]
+tool = 6
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtComponent" unique_id=1895505036]
+position = Vector2(0, -8.571429)
+shape = SubResource("CircleShape2D_1cmdg")
+debug_color = Color(0.8223799, 0.2708259, 0.74277276, 0.41960785)
+
+[node name="DamageComponent" parent="." unique_id=978842440 instance=ExtResource("7_gsrfl")]
+max_damage = 5

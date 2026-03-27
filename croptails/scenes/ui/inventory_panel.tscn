@@ -3,6 +3,7 @@
 [ext_resource type="Theme" uid="uid://ljcck66th0xd" path="res://scenes/ui/game_ui_theme.tres" id="1_ta3uk"]
 [ext_resource type="Script" uid="uid://da4ipb51gg0xg" path="res://scenes/ui/inventory_panel.gd" id="2_ta3uk"]
 [ext_resource type="Texture2D" uid="uid://da06f56a64p7i" path="res://assets/Sprout Lands - Sprites - Basic pack/Objects/Egg_item.png" id="3_cvy6a"]
+[ext_resource type="Texture2D" uid="uid://bbtdoqcdynfu1" path="res://pictures/1774597214833.png" id="3_lcq1t"]
 [ext_resource type="Texture2D" uid="uid://y2e4gk54v4ee" path="res://assets/Sprout Lands - Sprites - Basic pack/Objects/Simple_Milk_and_grass_item.png" id="4_ta3uk"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_cvy6a"]
@@ -32,6 +33,9 @@ load_path = "res://.godot/imported/Basic_Plants.png-29417a4061ae7441263ced9a0e97
 [sub_resource type="AtlasTexture" id="AtlasTexture_b11k6"]
 atlas = SubResource("CompressedTexture2D_lcq1t")
 region = Rect2(80, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4tgr1"]
+atlas = ExtResource("3_lcq1t")
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tdvod"]
 atlas = ExtResource("4_ta3uk")
@@ -120,6 +124,24 @@ size_flags_vertical = 0
 texture = SubResource("AtlasTexture_b11k6")
 
 [node name="TomatoLabel" type="Label" parent="MarginContainer/VBoxContainer/Tomato" unique_id=1174678606]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_type_variation = &"InventoryLabel"
+text = "0"
+
+[node name="Meat" type="PanelContainer" parent="MarginContainer/VBoxContainer" unique_id=493160251]
+custom_minimum_size = Vector2(26, 32)
+layout_mode = 2
+theme_type_variation = &"InventoryItemPanel"
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/Meat" unique_id=1543623022]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+texture = SubResource("AtlasTexture_4tgr1")
+
+[node name="MeatLabel" type="Label" parent="MarginContainer/VBoxContainer/Meat" unique_id=1282037178]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 8
