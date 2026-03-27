@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://byasrddcppaim" path="res://assets/Sprout Lands - Sprites - Basic pack/Objects/Basic_Grass_Biom_things.png" id="4_7cqdy"]
 [ext_resource type="PackedScene" uid="uid://bwcqdeqg2myun" path="res://scenes/objects/rocks/rock.tscn" id="4_8yb5x"]
 [ext_resource type="Texture2D" uid="uid://bd8mg8awnj12f" path="res://assets/Sprout Lands - Sprites - Basic pack/Tilesets/Fences.png" id="7_xa2g7"]
+[ext_resource type="Texture2D" uid="uid://b5646qru7wkmw" path="res://assets/Sprout Lands - Sprites - Basic pack/Objects/Free_Chicken_House.png" id="10_8u0cr"]
 [ext_resource type="Texture2D" uid="uid://bfjvo2s50yom8" path="res://assets/Sprout Lands - Sprites - Basic pack/Objects/Paths.png" id="11_8u0cr"]
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_uk42g"]
@@ -695,6 +696,12 @@ texture = ExtResource("4_7cqdy")
 0:3/0 = 0
 1:3/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2yqys"]
+texture = ExtResource("10_8u0cr")
+0:0/size_in_atlas = Vector2i(3, 3)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-13, -12, 13, -11.5, 13, 13, 9, 13, 8, -8, -8, -8, -9, 13, -13, 13)
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8u0cr"]
 texture = ExtResource("11_8u0cr")
 0:0/0 = 0
@@ -762,3 +769,4 @@ sources/5 = SubResource("TileSetAtlasSource_pudl8")
 sources/0 = SubResource("TileSetScenesCollectionSource_uk42g")
 sources/3 = SubResource("TileSetAtlasSource_jutaf")
 sources/8 = SubResource("TileSetAtlasSource_8u0cr")
+sources/7 = SubResource("TileSetAtlasSource_2yqys")
