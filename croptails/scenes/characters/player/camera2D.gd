@@ -8,6 +8,7 @@ func _input(event : InputEvent) -> void:
 	if event.is_action_released("shift"):
 		set_zoom(Vector2(2, 2))
 		return
+	'''
 	if event.is_action_pressed("shake"):
 		$".".shake()
 
@@ -20,4 +21,4 @@ func shake() -> void:
 	shake_tween.tween_property(self, "offset", offset + Vector2(random_num, -random_num), 0.05)
 	shake_tween.tween_property(self, "offset", offset + Vector2(-random_num, random_num), 0.05)
 	shake_tween.tween_property(self, "offset", Vector2(0, 0), 0.05)
-	
+	'''
