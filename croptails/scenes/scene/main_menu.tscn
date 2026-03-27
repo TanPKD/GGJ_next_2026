@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dlmslshwvjsgx"]
 
 [ext_resource type="Script" uid="uid://bptk4edabx633" path="res://scenes/scene/main_menu.gd" id="1_x647b"]
-[ext_resource type="Texture2D" uid="uid://coyuemob2vg4n" path="res://pictures/backgrounds/梗图.png" id="2_gi87k"]
+[ext_resource type="Texture2D" uid="uid://dp44cb5w38n17" path="res://pictures/backgrounds/ChatGPT Image 2026年3月27日 下午10_17_01.png" id="2_gi87k"]
 [ext_resource type="AudioStream" uid="uid://bud8p60a2gde3" path="res://sounds/sound_button/button-click.wav" id="3_gi87k"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rcfat"]
@@ -109,24 +109,25 @@ text = "请输入文本"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="main_main_menu" type="VBoxContainer" parent="." unique_id=779835575]
+[node name="main_main_menu" type="HBoxContainer" parent="." unique_id=347919061]
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = 7
 anchor_left = 0.5
-anchor_top = 0.5
+anchor_top = 1.0
 anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -70.75
-offset_top = 8.0
-offset_right = 70.75
-offset_bottom = 131.25
+anchor_bottom = 1.0
+offset_left = -226.0
+offset_top = -64.0
+offset_right = 226.0
+offset_bottom = -30.0
 grow_horizontal = 2
-grow_vertical = 2
+grow_vertical = 0
 theme_override_constants/separation = 10
 alignment = 1
 
 [node name="Button1" type="Button" parent="main_main_menu" unique_id=1715300]
 layout_mode = 2
+size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
@@ -138,7 +139,7 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_rcfat")
 theme_override_styles/hover = SubResource("StyleBoxFlat_umnae")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_y5crb")
 action_mode = 0
-text = "start"
+text = "开始游戏"
 
 [node name="Button2" type="Button" parent="main_main_menu" unique_id=1255037778]
 visible = false
@@ -158,6 +159,7 @@ text = "option"
 
 [node name="Button3" type="Button" parent="main_main_menu" unique_id=448055129]
 layout_mode = 2
+size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
@@ -169,10 +171,11 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_gi87k")
 theme_override_styles/hover = SubResource("StyleBoxFlat_naftw")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_itlps")
 action_mode = 0
-text = "credit"
+text = "制作者"
 
 [node name="Button4" type="Button" parent="main_main_menu" unique_id=1031714556]
 layout_mode = 2
+size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
@@ -184,7 +187,7 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_gi87k")
 theme_override_styles/hover = SubResource("StyleBoxFlat_naftw")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_itlps")
 action_mode = 0
-text = "exit"
+text = "退出游戏"
 
 [node name="credit_menu" type="VBoxContainer" parent="." unique_id=1910946335]
 visible = false
@@ -195,12 +198,12 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -125.0
-offset_top = -27.5
+offset_top = -122.0
 offset_right = 125.0
-offset_bottom = 177.0
+offset_bottom = 132.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/separation = 16
+theme_override_constants/separation = 64
 
 [node name="Label" type="Label" parent="credit_menu" unique_id=2079458895]
 custom_minimum_size = Vector2(250, 0)
@@ -209,7 +212,9 @@ theme_override_colors/font_shadow_color = Color(0.39215687, 0.39215687, 0.392156
 theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_offset_y = 5
 theme_override_font_sizes/font_size = 36
-text = "点击输入文字"
+text = "LeT'S Go!
+游戏制作不易
+感谢游玩！"
 horizontal_alignment = 1
 autowrap_mode = 2
 
@@ -228,7 +233,7 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_rcfat")
 theme_override_styles/hover = SubResource("StyleBoxFlat_umnae")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_y5crb")
 action_mode = 0
-text = "back"
+text = "返回"
 
 [node name="ButtonClick" type="AudioStreamPlayer" parent="." unique_id=846872511]
 stream = ExtResource("3_gi87k")
