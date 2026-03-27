@@ -136,5 +136,98 @@ position = Vector2(844, 206)
 [node name="Corn4" parent="." unique_id=1399012976 instance=ExtResource("5_mw2hb")]
 position = Vector2(857, 206)
 
+[node name="Corn5" parent="." unique_id=1320516887 instance=ExtResource("5_mw2hb")]
+position = Vector2(870, 206)
+
+[node name="Corn6" parent="." unique_id=23020131 instance=ExtResource("5_mw2hb")]
+position = Vector2(883, 206)
+
+[node name="Corn7" parent="." unique_id=889080179 instance=ExtResource("5_mw2hb")]
+position = Vector2(896, 206)
+
+[node name="Corn8" parent="." unique_id=619408954 instance=ExtResource("5_mw2hb")]
+position = Vector2(909, 206)
+
+[node name="Corn9" parent="." unique_id=481248650 instance=ExtResource("5_mw2hb")]
+position = Vector2(818, 214)
+
+[node name="Corn10" parent="." unique_id=1994142045 instance=ExtResource("5_mw2hb")]
+position = Vector2(831, 214)
+
+[node name="Corn11" parent="." unique_id=1735482879 instance=ExtResource("5_mw2hb")]
+position = Vector2(844, 214)
+
+[node name="Corn12" parent="." unique_id=673194387 instance=ExtResource("5_mw2hb")]
+position = Vector2(857, 214)
+
+[node name="Corn13" parent="." unique_id=417006269 instance=ExtResource("5_mw2hb")]
+position = Vector2(870, 214)
+
+[node name="Corn14" parent="." unique_id=1670713653 instance=ExtResource("5_mw2hb")]
+position = Vector2(883, 214)
+
+[node name="Corn15" parent="." unique_id=547594199 instance=ExtResource("5_mw2hb")]
+position = Vector2(896, 214)
+
+[node name="Corn16" parent="." unique_id=1162834993 instance=ExtResource("5_mw2hb")]
+position = Vector2(909, 214)
+
+[node name="Corn17" parent="." unique_id=1382984011 instance=ExtResource("5_mw2hb")]
+position = Vector2(818, 222)
+
+[node name="Corn18" parent="." unique_id=1104638351 instance=ExtResource("5_mw2hb")]
+position = Vector2(831, 222)
+
+[node name="Corn19" parent="." unique_id=720959880 instance=ExtResource("5_mw2hb")]
+position = Vector2(844, 222)
+
+[node name="Corn20" parent="." unique_id=1406517620 instance=ExtResource("5_mw2hb")]
+position = Vector2(857, 222)
+
+[node name="Corn21" parent="." unique_id=1213703054 instance=ExtResource("5_mw2hb")]
+position = Vector2(870, 222)
+
+[node name="Corn22" parent="." unique_id=1364307179 instance=ExtResource("5_mw2hb")]
+position = Vector2(883, 222)
+
+[node name="Corn23" parent="." unique_id=1799736454 instance=ExtResource("5_mw2hb")]
+position = Vector2(896, 222)
+
+[node name="Corn24" parent="." unique_id=610846241 instance=ExtResource("5_mw2hb")]
+position = Vector2(909, 222)
+
+[node name="Corn25" parent="." unique_id=1731574814 instance=ExtResource("5_mw2hb")]
+position = Vector2(818, 230)
+
+[node name="Corn26" parent="." unique_id=1081246218 instance=ExtResource("5_mw2hb")]
+position = Vector2(831, 230)
+
+[node name="Corn27" parent="." unique_id=1236101511 instance=ExtResource("5_mw2hb")]
+position = Vector2(844, 230)
+
+[node name="Corn28" parent="." unique_id=1087789416 instance=ExtResource("5_mw2hb")]
+position = Vector2(857, 230)
+
+[node name="Corn29" parent="." unique_id=1943298202 instance=ExtResource("5_mw2hb")]
+position = Vector2(870, 230)
+
+[node name="Corn30" parent="." unique_id=361830092 instance=ExtResource("5_mw2hb")]
+position = Vector2(883, 230)
+
+[node name="Corn31" parent="." unique_id=1214656690 instance=ExtResource("5_mw2hb")]
+position = Vector2(896, 230)
+
+[node name="Corn32" parent="." unique_id=1767928306 instance=ExtResource("5_mw2hb")]
+position = Vector2(909, 230)
+
 [node name="Tomato" parent="." unique_id=721319709 instance=ExtResource("4_ya1oh")]
-position = Vector2(819, 269)
+position = Vector2(818, 233)
+
+[node name="Tomato2" parent="." unique_id=1188380889 instance=ExtResource("4_ya1oh")]
+position = Vector2(833, 233)
+
+[node name="Tomato3" parent="." unique_id=605060547 instance=ExtResource("4_ya1oh")]
+position = Vector2(848, 233)
+
+[node name="Tomato4" parent="." unique_id=2082232737 instance=ExtResource("4_ya1oh")]
+position = Vector2(863, 233)
