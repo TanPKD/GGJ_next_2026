@@ -51,6 +51,7 @@ pause_sound = NodePath("ButtonClick")
 
 [node name="BGM" type="AudioStreamPlayer" parent="." unique_id=1529316056]
 stream = ExtResource("5_6ao43")
+volume_db = -80.0
 autoplay = true
 
 [node name="Control" type="Control" parent="." unique_id=1276172392]
@@ -123,7 +124,7 @@ offset_bottom = -66.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 32
-text = "暂停游戏"
+text = "Paused"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Control/Panel" unique_id=603175992]
 layout_mode = 1
@@ -155,7 +156,7 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_k7v30")
 theme_override_styles/hover = SubResource("StyleBoxFlat_d544f")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_1ii8v")
 action_mode = 0
-text = "继续游戏"
+text = "Continue"
 
 [node name="QuitButton" type="Button" parent="Control/Panel/VBoxContainer" unique_id=400603378]
 custom_minimum_size = Vector2(125, 30)
@@ -172,7 +173,7 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_k7v30")
 theme_override_styles/hover = SubResource("StyleBoxFlat_d544f")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_1ii8v")
 action_mode = 0
-text = "退出游戏"
+text = "Quit Game"
 
 [node name="ButtonClick" type="AudioStreamPlayer" parent="." unique_id=461998930]
 stream = ExtResource("6_ns0ul")

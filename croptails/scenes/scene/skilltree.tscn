@@ -70,7 +70,7 @@ offset_left = 39.0
 offset_top = 75.0
 offset_right = 136.0
 offset_bottom = 107.0
-tech_description = "学会生火"
+tech_description = "Start fire"
 
 [node name="SkillButton2" parent="Control" unique_id=1484806887 node_paths=PackedStringArray("connections_layer", "parent_tech_node") instance=ExtResource("1_mai1q")]
 z_as_relative = false
@@ -79,7 +79,7 @@ offset_left = 186.0
 offset_top = 41.0
 offset_right = 283.0
 offset_bottom = 73.0
-tech_description = "习得制作火把"
+tech_description = "Torch"
 connections_layer = NodePath("../SkillButton")
 parent_tech_node = NodePath("../SkillButton")
 
@@ -90,7 +90,7 @@ offset_left = 327.0
 offset_top = 70.0
 offset_right = 424.0
 offset_bottom = 102.0
-tech_description = "篝火晚会"
+tech_description = "Bonfire"
 connections_layer = NodePath("../SkillButton2")
 parent_tech_node = NodePath("../SkillButton2")
 
@@ -101,7 +101,7 @@ offset_left = 466.0
 offset_top = 37.0
 offset_right = 563.0
 offset_bottom = 69.0
-tech_description = "动物油助燃"
+tech_description = "Animal oil"
 connections_layer = NodePath("../SkillButton3")
 parent_tech_node = NodePath("../SkillButton3")
 
@@ -112,7 +112,7 @@ offset_left = 43.0
 offset_top = 161.0
 offset_right = 140.0
 offset_bottom = 193.0
-tech_description = "识别植物"
+tech_description = "Identifying plants"
 
 [node name="SkillButton6" parent="Control" unique_id=236790066 node_paths=PackedStringArray("connections_layer", "parent_tech_node") instance=ExtResource("1_mai1q")]
 z_as_relative = false
@@ -121,7 +121,7 @@ offset_left = 192.0
 offset_top = 172.0
 offset_right = 289.0
 offset_bottom = 204.0
-tech_description = "作物培育"
+tech_description = "Growing Crop"
 connections_layer = NodePath("../SkillButton5")
 parent_tech_node = NodePath("../SkillButton5")
 
@@ -132,7 +132,7 @@ offset_left = 343.0
 offset_top = 146.0
 offset_right = 440.0
 offset_bottom = 178.0
-tech_description = "分辨季节"
+tech_description = "Identify Season"
 connections_layer = NodePath("../SkillButton6")
 parent_tech_node = NodePath("../SkillButton6")
 
@@ -143,7 +143,7 @@ offset_left = 487.0
 offset_top = 194.0
 offset_right = 584.0
 offset_bottom = 226.0
-tech_description = "使用肥料"
+tech_description = "Fertilizer"
 connections_layer = NodePath("../SkillButton7")
 parent_tech_node = NodePath("../SkillButton7")
 
@@ -166,6 +166,6 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_e18ic")
 theme_override_styles/hover = SubResource("StyleBoxFlat_v5osj")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_eluku")
 action_mode = 0
-text = "下一天"
+text = "Next Day"
 
 [connection signal="pressed" from="Button5" to="." method="_on_button_5_pressed"]

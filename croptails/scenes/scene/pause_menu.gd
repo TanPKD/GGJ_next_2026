@@ -16,7 +16,7 @@ var paused_time: float
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
-
+'''
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	# linear是将分贝值转换成线性值，不是线性渐变的意思
@@ -31,7 +31,7 @@ func _process(delta: float) -> void:
 	BGM_Player.volume_db = linear_to_db(volume_linear)
 	# 当游戏暂停且距离游戏暂停时间以过去paused_time + X （X即毫秒）时暂停BGM
 	BGM_Player.stream_paused = get_tree().paused and Time.get_ticks_msec() > paused_time + 1000
-	
+	'''
 func _input(event : InputEvent) -> void:
 	if event.is_action_pressed("escape"):
 		if not get_tree().paused:

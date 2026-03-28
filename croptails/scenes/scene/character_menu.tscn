@@ -153,7 +153,7 @@ theme_override_colors/font_shadow_color = Color(0.39215687, 0.39215687, 0.392156
 theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_offset_y = 5
 theme_override_font_sizes/font_size = 24
-text = "荒野"
+text = "Wild"
 
 [node name="Panel2" type="Panel" parent="HBoxContainer" unique_id=1545928528]
 layout_mode = 2
@@ -232,7 +232,7 @@ theme_override_colors/font_shadow_color = Color(0.39215687, 0.39215687, 0.392156
 theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_offset_y = 5
 theme_override_font_sizes/font_size = 24
-text = "部落"
+text = "Tribe"
 
 [node name="Panel3" type="Panel" parent="HBoxContainer" unique_id=2064560448]
 layout_mode = 2
@@ -311,7 +311,7 @@ theme_override_colors/font_shadow_color = Color(0.39215687, 0.39215687, 0.392156
 theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_offset_y = 5
 theme_override_font_sizes/font_size = 24
-text = "工作坊"
+text = "Workshop"
 
 [node name="Button" type="Button" parent="." unique_id=1017911467]
 custom_minimum_size = Vector2(125, 30)
@@ -339,7 +339,7 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_4bh4p")
 theme_override_styles/hover = SubResource("StyleBoxFlat_qy06r")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_8hev4")
 action_mode = 0
-text = "新的一天"
+text = "New Day"
 
 [node name="Label" type="Label" parent="." unique_id=493628507]
 layout_mode = 1
@@ -358,7 +358,8 @@ theme_override_colors/font_shadow_color = Color(0.39215687, 0.39215687, 0.392156
 theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_offset_y = 5
 theme_override_font_sizes/font_size = 36
-text = "选择今天的工作分配"
+text = "Assign Today's Work"
+horizontal_alignment = 1
 
 [node name="ButtonClick" type="AudioStreamPlayer" parent="." unique_id=954655311]
 stream = ExtResource("14_qy06r")

@@ -105,7 +105,7 @@ theme_override_colors/font_shadow_color = Color(0.39215687, 0.39215687, 0.392156
 theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_offset_y = 7
 theme_override_font_sizes/font_size = 64
-text = "饥饿荒野"
+text = "Hunger Wild"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -139,7 +139,7 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_rcfat")
 theme_override_styles/hover = SubResource("StyleBoxFlat_umnae")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_y5crb")
 action_mode = 0
-text = "开始游戏"
+text = "Start"
 
 [node name="Button2" type="Button" parent="main_main_menu" unique_id=1255037778]
 visible = false
@@ -171,7 +171,7 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_gi87k")
 theme_override_styles/hover = SubResource("StyleBoxFlat_naftw")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_itlps")
 action_mode = 0
-text = "制作者"
+text = "Credit"
 
 [node name="Button4" type="Button" parent="main_main_menu" unique_id=1031714556]
 layout_mode = 2
@@ -187,7 +187,7 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_gi87k")
 theme_override_styles/hover = SubResource("StyleBoxFlat_naftw")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_itlps")
 action_mode = 0
-text = "退出游戏"
+text = "Exit"
 
 [node name="credit_menu" type="VBoxContainer" parent="." unique_id=1910946335]
 visible = false
@@ -197,10 +197,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -125.0
-offset_top = -122.0
-offset_right = 125.0
-offset_bottom = 132.0
+offset_left = -158.5
+offset_top = -151.5
+offset_right = 158.5
+offset_bottom = 151.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 64
@@ -213,8 +213,8 @@ theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_offset_y = 5
 theme_override_font_sizes/font_size = 36
 text = "LeT'S Go!
-游戏制作不易
-感谢游玩！"
+Our First Game!
+Thanks for playing!"
 horizontal_alignment = 1
 autowrap_mode = 2
 
@@ -233,7 +233,7 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_rcfat")
 theme_override_styles/hover = SubResource("StyleBoxFlat_umnae")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_y5crb")
 action_mode = 0
-text = "返回"
+text = "Back"
 
 [node name="ButtonClick" type="AudioStreamPlayer" parent="." unique_id=846872511]
 stream = ExtResource("3_gi87k")
